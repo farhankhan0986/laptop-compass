@@ -2,6 +2,7 @@ import { createFileRoute, Link, notFound } from "@tanstack/react-router";
 import { useState } from "react";
 import { Star, Check, X as XIcon, ExternalLink } from "lucide-react";
 import { getLaptopBySlug, getSimilar, formatINR, formatUSD } from "@/lib/data";
+import type { Laptop } from "@/lib/data/types";
 import { LaptopCard } from "@/components/laptop/LaptopCard";
 
 export const Route = createFileRoute("/laptops/$slug")({
@@ -50,7 +51,7 @@ export const Route = createFileRoute("/laptops/$slug")({
 });
 
 function LaptopDetails() {
-  const { laptop } = Route.useLoaderData();
+  const { laptop } = Route.useLoaderData() as { laptop: Laptop };
   const [active, setActive] = useState(0);
   const similar = getSimilar(laptop);
 

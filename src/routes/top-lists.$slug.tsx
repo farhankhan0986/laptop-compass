@@ -1,6 +1,7 @@
 import { createFileRoute, Link, notFound } from "@tanstack/react-router";
 import { Star, ExternalLink } from "lucide-react";
 import { getTopList, getTopListLaptops, formatINR, formatUSD } from "@/lib/data";
+import type { Laptop, TopList } from "@/lib/data/types";
 
 export const Route = createFileRoute("/top-lists/$slug")({
   loader: ({ params }) => {
@@ -31,7 +32,7 @@ export const Route = createFileRoute("/top-lists/$slug")({
 });
 
 function TopListPage() {
-  const { list, laptops } = Route.useLoaderData();
+  const { list, laptops } = Route.useLoaderData() as { list: TopList; laptops: Laptop[] };
 
   return (
     <div className="mx-auto max-w-4xl px-4 py-12 sm:px-6">
