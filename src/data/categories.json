@@ -1,0 +1,13 @@
+[
+  { "slug": "gaming", "name": "Gaming", "description": "High-performance laptops built for AAA titles, esports, and high refresh-rate displays." },
+  { "slug": "editing", "name": "Editing", "description": "Color-accurate displays and powerful GPUs for video, photo, and motion work." },
+  { "slug": "programming", "name": "Programming", "description": "Comfortable keyboards, fast CPUs, and great battery life for long coding sessions." },
+  { "slug": "students", "name": "Students", "description": "Lightweight, affordable, and reliable machines for school and university work." },
+  { "slug": "budget", "name": "Budget Friendly", "description": "Smart picks under tight budgets without sacrificing the essentials." },
+  { "slug": "premium", "name": "Premium", "description": "Flagship designs, top-tier displays, and best-in-class build quality." },
+  { "slug": "expensive", "name": "Most Expensive", "description": "No-compromise machines for users who want absolute peak performance." },
+  { "slug": "lightweight", "name": "Lightweight", "description": "Sub-1.5kg laptops that travel anywhere without weighing you down." },
+  { "slug": "creator", "name": "Creator", "description": "Designed for creative professionals who edit, render, and design daily." },
+  { "slug": "business", "name": "Business", "description": "Durable, secure, and serviceable machines built for the enterprise." },
+  { "slug": "aiml", "name": "AI / ML", "description": "Local model inference and on-device AI with capable NPUs and GPUs." }
+]

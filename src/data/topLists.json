@@ -1,0 +1,44 @@
+[
+  {
+    "slug": "most-powerful",
+    "title": "Top 10 Most Powerful Laptops",
+    "description": "Desktop-class CPUs, flagship GPUs, and uncompromised thermals — the fastest machines you can buy today.",
+    "laptopIds": ["alienware-m18-r2","razer-blade-16-2024","lenovo-legion-pro-7i-gen-9","msi-stealth-16-ai-studio","asus-rog-zephyrus-g16","acer-predator-helios-16","macbook-pro-16-m4-pro","dell-xps-15-9540","hp-omen-16","asus-rog-zephyrus-g14-2024"],
+    "notes": {}
+  },
+  {
+    "slug": "most-expensive",
+    "title": "Top 10 Most Expensive Laptops",
+    "description": "Flagship machines at the very top of the price ladder.",
+    "laptopIds": ["alienware-m18-r2","razer-blade-16-2024","msi-stealth-16-ai-studio","lenovo-legion-pro-7i-gen-9","macbook-pro-16-m4-pro","asus-rog-zephyrus-g16","dell-xps-15-9540","acer-predator-helios-16","lenovo-thinkpad-x1-carbon-gen-12","asus-rog-zephyrus-g14-2024"],
+    "notes": {}
+  },
+  {
+    "slug": "budget-friendly",
+    "title": "Top 10 Budget Friendly Laptops",
+    "description": "Smart picks under tight budgets — these laptops punch well above their price tag.",
+    "laptopIds": ["lenovo-chromebook-plus","acer-aspire-5","lenovo-ideapad-slim-5","hp-pavilion-plus-14","framework-laptop-13-ryzen-7040","dell-xps-13-9350","samsung-galaxy-book4-pro-16","macbook-air-15-m3","microsoft-surface-laptop-7-15","lenovo-thinkpad-x1-carbon-gen-12"],
+    "notes": {}
+  },
+  {
+    "slug": "students",
+    "title": "Top 10 Laptops for Students",
+    "description": "Portable, dependable, and built to last through years of classes and projects.",
+    "laptopIds": ["macbook-air-15-m3","lenovo-ideapad-slim-5","hp-pavilion-plus-14","acer-aspire-5","lenovo-chromebook-plus","dell-xps-13-9350","framework-laptop-13-ryzen-7040","samsung-galaxy-book4-pro-16","microsoft-surface-laptop-7-15","lenovo-thinkpad-x1-carbon-gen-12"],
+    "notes": {}
+  },
+  {
+    "slug": "gaming",
+    "title": "Top 10 Gaming Laptops",
+    "description": "High refresh-rate panels, beefy GPUs, and serious cooling — built for play.",
+    "laptopIds": ["alienware-m18-r2","razer-blade-16-2024","lenovo-legion-pro-7i-gen-9","asus-rog-zephyrus-g16","acer-predator-helios-16","msi-stealth-16-ai-studio","asus-rog-zephyrus-g14-2024","hp-omen-16","dell-xps-15-9540","macbook-pro-16-m4-pro"],
+    "notes": {}
+  },
+  {
+    "slug": "creators",
+    "title": "Top 10 Creator Laptops",
+    "description": "Color-accurate displays and serious compute for video, photo, and 3D.",
+    "laptopIds": ["macbook-pro-16-m4-pro","dell-xps-15-9540","msi-stealth-16-ai-studio","razer-blade-16-2024","asus-rog-zephyrus-g16","samsung-galaxy-book4-pro-16","acer-predator-helios-16","asus-rog-zephyrus-g14-2024","hp-omen-16","alienware-m18-r2"],
+    "notes": {}
+  }
+]

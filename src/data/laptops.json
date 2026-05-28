@@ -1,0 +1,1541 @@
+[
+  {
+    "id": "macbook-pro-16-m4-pro",
+    "slug": "macbook-pro-16-m4-pro",
+    "name": "MacBook Pro 16 M4 Pro",
+    "brand": "Apple",
+    "category": [
+      "premium",
+      "editing",
+      "creator",
+      "aiml"
+    ],
+    "os": "macOS",
+    "priceINR": 249999,
+    "priceUSD": 2999,
+    "rating": 4.9,
+    "processor": "Apple M4 Pro 14-core",
+    "processorBrand": "Apple",
+    "gpu": "Apple M4 Pro 20-core GPU",
+    "gpuBrand": "Apple",
+    "ram": "36GB Unified",
+    "ramGB": 36,
+    "storage": "1TB SSD",
+    "storageGB": 1000,
+    "display": "16.2\" Liquid Retina XDR",
+    "displaySize": 16.2,
+    "refreshRate": "120Hz ProMotion",
+    "refreshRateHz": 120,
+    "battery": "Up to 22 hours",
+    "batteryHours": 22,
+    "weight": "2.14 kg",
+    "ports": [
+      "Thunderbolt 4",
+      "USB-A 3.2",
+      "HDMI 2.1",
+      "3.5mm Audio"
+    ],
+    "build": "CNC Aluminum unibody",
+    "keyboard": "Backlit chiclet, 1.5mm travel",
+    "webcam": "1080p IR with Windows Hello",
+    "cooling": "Dual-fan vapor chamber",
+    "aiFeatures": "Apple Intelligence, on-device LLM",
+    "shortDescription": "Apple M4 Pro 14-core · 36GB Unified · 1TB SSD",
+    "description": "The MacBook Pro 16 M4 Pro pairs a Apple M4 Pro 14-core with Apple M4 Pro 20-core GPU and a 16.2\" Liquid Retina XDR, delivering up to 22 hours of battery life in a 2.14 kg chassis. A balanced pick for premium and editing workloads.",
+    "tags": [
+      "Best for Creators",
+      "Apple Silicon",
+      "ProMotion"
+    ],
+    "pros": [
+      "Excellent premium performance",
+      "Premium IPS display",
+      "Solid build quality from Apple"
+    ],
+    "cons": [
+      "Premium pricing",
+      "On the heavier side"
+    ],
+    "bestFor": [
+      "Best for premium",
+      "Best for editing",
+      "Best for creator"
+    ],
+    "performance": {
+      "gaming": 70,
+      "editing": 92,
+      "coding": 90,
+      "aiml": 88
+    },
+    "images": [
+      "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1611186871348-b1ce696e52c9?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?auto=format&fit=crop&w=1200&q=80"
+    ],
+    "buyLinks": {
+      "amazon": "https://www.amazon.in",
+      "flipkart": "https://www.flipkart.com",
+      "official": "#"
+    }
+  },
+  {
+    "id": "macbook-air-15-m3",
+    "slug": "macbook-air-15-m3",
+    "name": "MacBook Air 15 M3",
+    "brand": "Apple",
+    "category": [
+      "premium",
+      "students",
+      "lightweight",
+      "programming"
+    ],
+    "os": "macOS",
+    "priceINR": 134999,
+    "priceUSD": 1499,
+    "rating": 4.8,
+    "processor": "Apple M3 8-core",
+    "processorBrand": "Apple",
+    "gpu": "Apple M3 10-core GPU",
+    "gpuBrand": "Apple",
+    "ram": "16GB Unified",
+    "ramGB": 16,
+    "storage": "512GB SSD",
+    "storageGB": 512,
+    "display": "15.3\" Liquid Retina",
+    "displaySize": 15.3,
+    "refreshRate": "60Hz",
+    "refreshRateHz": 60,
+    "battery": "Up to 18 hours",
+    "batteryHours": 18,
+    "weight": "1.51 kg",
+    "ports": [
+      "Thunderbolt 4",
+      "USB-A 3.2",
+      "HDMI 2.1",
+      "3.5mm Audio"
+    ],
+    "build": "CNC Aluminum unibody",
+    "keyboard": "Backlit chiclet, 1.5mm travel",
+    "webcam": "1080p IR with Windows Hello",
+    "cooling": "Dual-fan vapor chamber",
+    "aiFeatures": "Apple Intelligence, on-device LLM",
+    "shortDescription": "Apple M3 8-core · 16GB Unified · 512GB SSD",
+    "description": "The MacBook Air 15 M3 pairs a Apple M3 8-core with Apple M3 10-core GPU and a 15.3\" Liquid Retina, delivering up to 18 hours of battery life in a 1.51 kg chassis. A balanced pick for premium and students workloads.",
+    "tags": [
+      "Fanless",
+      "All-day Battery"
+    ],
+    "pros": [
+      "Excellent premium performance",
+      "Premium IPS display",
+      "Solid build quality from Apple"
+    ],
+    "cons": [
+      "Premium pricing",
+      "Limited port selection"
+    ],
+    "bestFor": [
+      "Best for premium",
+      "Best for students",
+      "Best for lightweight"
+    ],
+    "performance": {
+      "gaming": 70,
+      "editing": 92,
+      "coding": 90,
+      "aiml": 88
+    },
+    "images": [
+      "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1593642632559-0c6d3fc62b89?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1531297484001-80022131f5a1?auto=format&fit=crop&w=1200&q=80"
+    ],
+    "buyLinks": {
+      "amazon": "https://www.amazon.in",
+      "flipkart": "https://www.flipkart.com",
+      "official": "#"
+    }
+  },
+  {
+    "id": "dell-xps-13-9350",
+    "slug": "dell-xps-13-9350",
+    "name": "Dell XPS 13 (9350)",
+    "brand": "Dell",
+    "category": [
+      "premium",
+      "business",
+      "lightweight",
+      "programming"
+    ],
+    "os": "Windows",
+    "priceINR": 139990,
+    "priceUSD": 1499,
+    "rating": 4.6,
+    "processor": "Intel Core Ultra 7 258V",
+    "processorBrand": "Intel",
+    "gpu": "Intel Arc Graphics 140V",
+    "gpuBrand": "Intel",
+    "ram": "16GB LPDDR5X",
+    "ramGB": 16,
+    "storage": "512GB SSD",
+    "storageGB": 512,
+    "display": "13.4\" FHD+ InfinityEdge",
+    "displaySize": 13.4,
+    "refreshRate": "60Hz",
+    "refreshRateHz": 60,
+    "battery": "Up to 20 hours",
+    "batteryHours": 20,
+    "weight": "1.18 kg",
+    "ports": [
+      "Thunderbolt 4",
+      "USB-A 3.2",
+      "HDMI 2.1",
+      "3.5mm Audio"
+    ],
+    "build": "Aluminum & magnesium alloy",
+    "keyboard": "Backlit chiclet, 1.5mm travel",
+    "webcam": "1080p IR with Windows Hello",
+    "cooling": "Dual-fan vapor chamber",
+    "aiFeatures": "NPU acceleration, Copilot ready",
+    "shortDescription": "Intel Core Ultra 7 258V · 16GB LPDDR5X · 512GB SSD",
+    "description": "The Dell XPS 13 (9350) pairs a Intel Core Ultra 7 258V with Intel Arc Graphics 140V and a 13.4\" FHD+ InfinityEdge, delivering up to 20 hours of battery life in a 1.18 kg chassis. A balanced pick for premium and business workloads.",
+    "tags": [
+      "Compact",
+      "Copilot+ PC"
+    ],
+    "pros": [
+      "Excellent premium performance",
+      "Premium IPS display",
+      "Solid build quality from Dell"
+    ],
+    "cons": [
+      "Premium pricing",
+      "Limited port selection"
+    ],
+    "bestFor": [
+      "Best for premium",
+      "Best for business",
+      "Best for lightweight"
+    ],
+    "performance": {
+      "gaming": 70,
+      "editing": 85,
+      "coding": 90,
+      "aiml": 75
+    },
+    "images": [
+      "https://images.unsplash.com/photo-1541807084-5c52b6b3adef?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1588872657578-7efd1f1555ed?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1484788984921-03950022c9ef?auto=format&fit=crop&w=1200&q=80"
+    ],
+    "buyLinks": {
+      "amazon": "https://www.amazon.in",
+      "flipkart": "https://www.flipkart.com",
+      "official": "#"
+    }
+  },
+  {
+    "id": "dell-xps-15-9540",
+    "slug": "dell-xps-15-9540",
+    "name": "Dell XPS 15 (9540)",
+    "brand": "Dell",
+    "category": [
+      "creator",
+      "editing",
+      "premium"
+    ],
+    "os": "Windows",
+    "priceINR": 199990,
+    "priceUSD": 2199,
+    "rating": 4.5,
+    "processor": "Intel Core Ultra 9 185H",
+    "processorBrand": "Intel",
+    "gpu": "NVIDIA RTX 4070 8GB",
+    "gpuBrand": "NVIDIA",
+    "ram": "32GB DDR5",
+    "ramGB": 32,
+    "storage": "1TB SSD",
+    "storageGB": 1000,
+    "display": "15.6\" OLED 3.5K",
+    "displaySize": 15.6,
+    "refreshRate": "60Hz",
+    "refreshRateHz": 60,
+    "battery": "Up to 13 hours",
+    "batteryHours": 13,
+    "weight": "1.86 kg",
+    "ports": [
+      "Thunderbolt 4",
+      "USB-A 3.2",
+      "HDMI 2.1",
+      "3.5mm Audio"
+    ],
+    "build": "Aluminum & magnesium alloy",
+    "keyboard": "Backlit chiclet, 1.5mm travel",
+    "webcam": "1080p IR with Windows Hello",
+    "cooling": "Dual-fan vapor chamber",
+    "aiFeatures": "NPU acceleration, Copilot ready",
+    "shortDescription": "Intel Core Ultra 9 185H · 32GB DDR5 · 1TB SSD",
+    "description": "The Dell XPS 15 (9540) pairs a Intel Core Ultra 9 185H with NVIDIA RTX 4070 8GB and a 15.6\" OLED 3.5K, delivering up to 13 hours of battery life in a 1.86 kg chassis. A balanced pick for creator and editing workloads.",
+    "tags": [
+      "OLED",
+      "Workstation"
+    ],
+    "pros": [
+      "Excellent creator performance",
+      "Premium OLED display",
+      "Solid build quality from Dell"
+    ],
+    "cons": [
+      "Premium pricing",
+      "Limited port selection"
+    ],
+    "bestFor": [
+      "Best for creator",
+      "Best for editing",
+      "Best for premium"
+    ],
+    "performance": {
+      "gaming": 75,
+      "editing": 95,
+      "coding": 80,
+      "aiml": 85
+    },
+    "images": [
+      "https://images.unsplash.com/photo-1611186871348-b1ce696e52c9?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1504707748692-419802cf939d?auto=format&fit=crop&w=1200&q=80"
+    ],
+    "buyLinks": {
+      "amazon": "https://www.amazon.in",
+      "flipkart": "https://www.flipkart.com",
+      "official": "#"
+    }
+  },
+  {
+    "id": "asus-rog-zephyrus-g14-2024",
+    "slug": "asus-rog-zephyrus-g14-2024",
+    "name": "ASUS ROG Zephyrus G14 (2024)",
+    "brand": "ASUS",
+    "category": [
+      "gaming",
+      "creator",
+      "lightweight"
+    ],
+    "os": "Windows",
+    "priceINR": 174990,
+    "priceUSD": 1899,
+    "rating": 4.7,
+    "processor": "AMD Ryzen 9 8945HS",
+    "processorBrand": "AMD",
+    "gpu": "NVIDIA RTX 4070 8GB",
+    "gpuBrand": "NVIDIA",
+    "ram": "32GB LPDDR5X",
+    "ramGB": 32,
+    "storage": "1TB SSD",
+    "storageGB": 1000,
+    "display": "14\" ROG Nebula OLED",
+    "displaySize": 14,
+    "refreshRate": "120Hz",
+    "refreshRateHz": 120,
+    "battery": "Up to 10 hours",
+    "batteryHours": 10,
+    "weight": "1.5 kg",
+    "ports": [
+      "Thunderbolt 4",
+      "USB-A 3.2",
+      "HDMI 2.1",
+      "3.5mm Audio"
+    ],
+    "build": "Aluminum & magnesium alloy",
+    "keyboard": "Backlit chiclet, 1.5mm travel",
+    "webcam": "1080p IR with Windows Hello",
+    "cooling": "Dual-fan vapor chamber",
+    "aiFeatures": "NPU acceleration, Copilot ready",
+    "shortDescription": "AMD Ryzen 9 8945HS · 32GB LPDDR5X · 1TB SSD",
+    "description": "The ASUS ROG Zephyrus G14 (2024) pairs a AMD Ryzen 9 8945HS with NVIDIA RTX 4070 8GB and a 14\" ROG Nebula OLED, delivering up to 10 hours of battery life in a 1.5 kg chassis. A balanced pick for gaming and creator workloads.",
+    "tags": [
+      "OLED",
+      "Portable Gaming"
+    ],
+    "pros": [
+      "Excellent gaming performance",
+      "Premium OLED display",
+      "Solid build quality from ASUS"
+    ],
+    "cons": [
+      "Premium pricing",
+      "Limited port selection"
+    ],
+    "bestFor": [
+      "Best for gaming",
+      "Best for creator",
+      "Best for lightweight"
+    ],
+    "performance": {
+      "gaming": 95,
+      "editing": 80,
+      "coding": 75,
+      "aiml": 80
+    },
+    "images": [
+      "https://images.unsplash.com/photo-1593642632559-0c6d3fc62b89?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1531297484001-80022131f5a1?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=1200&q=80"
+    ],
+    "buyLinks": {
+      "amazon": "https://www.amazon.in",
+      "flipkart": "https://www.flipkart.com",
+      "official": "#"
+    }
+  },
+  {
+    "id": "asus-rog-zephyrus-g16",
+    "slug": "asus-rog-zephyrus-g16",
+    "name": "ASUS ROG Zephyrus G16",
+    "brand": "ASUS",
+    "category": [
+      "gaming",
+      "creator",
+      "premium"
+    ],
+    "os": "Windows",
+    "priceINR": 229990,
+    "priceUSD": 2499,
+    "rating": 4.7,
+    "processor": "Intel Core Ultra 9 185H",
+    "processorBrand": "Intel",
+    "gpu": "NVIDIA RTX 4080 12GB",
+    "gpuBrand": "NVIDIA",
+    "ram": "32GB LPDDR5X",
+    "ramGB": 32,
+    "storage": "1TB SSD",
+    "storageGB": 1000,
+    "display": "16\" ROG Nebula OLED",
+    "displaySize": 16,
+    "refreshRate": "240Hz",
+    "refreshRateHz": 240,
+    "battery": "Up to 9 hours",
+    "batteryHours": 9,
+    "weight": "1.95 kg",
+    "ports": [
+      "Thunderbolt 4",
+      "USB-A 3.2",
+      "HDMI 2.1",
+      "3.5mm Audio"
+    ],
+    "build": "Aluminum & magnesium alloy",
+    "keyboard": "Backlit chiclet, 1.5mm travel",
+    "webcam": "1080p IR with Windows Hello",
+    "cooling": "Dual-fan vapor chamber",
+    "aiFeatures": "NPU acceleration, Copilot ready",
+    "shortDescription": "Intel Core Ultra 9 185H · 32GB LPDDR5X · 1TB SSD",
+    "description": "The ASUS ROG Zephyrus G16 pairs a Intel Core Ultra 9 185H with NVIDIA RTX 4080 12GB and a 16\" ROG Nebula OLED, delivering up to 9 hours of battery life in a 1.95 kg chassis. A balanced pick for gaming and creator workloads.",
+    "tags": [
+      "240Hz OLED",
+      "RTX 4080"
+    ],
+    "pros": [
+      "Excellent gaming performance",
+      "Premium OLED display",
+      "Solid build quality from ASUS"
+    ],
+    "cons": [
+      "Premium pricing",
+      "Limited port selection"
+    ],
+    "bestFor": [
+      "Best for gaming",
+      "Best for creator",
+      "Best for premium"
+    ],
+    "performance": {
+      "gaming": 95,
+      "editing": 80,
+      "coding": 75,
+      "aiml": 80
+    },
+    "images": [
+      "https://images.unsplash.com/photo-1588872657578-7efd1f1555ed?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1484788984921-03950022c9ef?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?auto=format&fit=crop&w=1200&q=80"
+    ],
+    "buyLinks": {
+      "amazon": "https://www.amazon.in",
+      "flipkart": "https://www.flipkart.com",
+      "official": "#"
+    }
+  },
+  {
+    "id": "lenovo-legion-pro-7i-gen-9",
+    "slug": "lenovo-legion-pro-7i-gen-9",
+    "name": "Lenovo Legion Pro 7i Gen 9",
+    "brand": "Lenovo",
+    "category": [
+      "gaming",
+      "expensive"
+    ],
+    "os": "Windows",
+    "priceINR": 259990,
+    "priceUSD": 2799,
+    "rating": 4.6,
+    "processor": "Intel Core i9-14900HX",
+    "processorBrand": "Intel",
+    "gpu": "NVIDIA RTX 4080 12GB",
+    "gpuBrand": "NVIDIA",
+    "ram": "32GB DDR5",
+    "ramGB": 32,
+    "storage": "1TB SSD",
+    "storageGB": 1000,
+    "display": "16\" PureSight WQXGA",
+    "displaySize": 16,
+    "refreshRate": "240Hz",
+    "refreshRateHz": 240,
+    "battery": "Up to 6 hours",
+    "batteryHours": 6,
+    "weight": "2.8 kg",
+    "ports": [
+      "Thunderbolt 4",
+      "USB-A 3.2",
+      "HDMI 2.1",
+      "3.5mm Audio"
+    ],
+    "build": "Aluminum & magnesium alloy",
+    "keyboard": "Backlit chiclet, 1.5mm travel",
+    "webcam": "1080p IR with Windows Hello",
+    "cooling": "Dual-fan vapor chamber",
+    "aiFeatures": "NPU acceleration, Copilot ready",
+    "shortDescription": "Intel Core i9-14900HX · 32GB DDR5 · 1TB SSD",
+    "description": "The Lenovo Legion Pro 7i Gen 9 pairs a Intel Core i9-14900HX with NVIDIA RTX 4080 12GB and a 16\" PureSight WQXGA, delivering up to 6 hours of battery life in a 2.8 kg chassis. A balanced pick for gaming and expensive workloads.",
+    "tags": [
+      "Desktop-class",
+      "240Hz"
+    ],
+    "pros": [
+      "Excellent gaming performance",
+      "Premium IPS display",
+      "Solid build quality from Lenovo"
+    ],
+    "cons": [
+      "Below-average battery life",
+      "On the heavier side"
+    ],
+    "bestFor": [
+      "Best for gaming",
+      "Best for expensive"
+    ],
+    "performance": {
+      "gaming": 95,
+      "editing": 80,
+      "coding": 75,
+      "aiml": 80
+    },
+    "images": [
+      "https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1504707748692-419802cf939d?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1541807084-5c52b6b3adef?auto=format&fit=crop&w=1200&q=80"
+    ],
+    "buyLinks": {
+      "amazon": "https://www.amazon.in",
+      "flipkart": "https://www.flipkart.com",
+      "official": "#"
+    }
+  },
+  {
+    "id": "lenovo-thinkpad-x1-carbon-gen-12",
+    "slug": "lenovo-thinkpad-x1-carbon-gen-12",
+    "name": "Lenovo ThinkPad X1 Carbon Gen 12",
+    "brand": "Lenovo",
+    "category": [
+      "business",
+      "premium",
+      "lightweight",
+      "programming"
+    ],
+    "os": "Windows",
+    "priceINR": 189990,
+    "priceUSD": 1999,
+    "rating": 4.7,
+    "processor": "Intel Core Ultra 7 165U",
+    "processorBrand": "Intel",
+    "gpu": "Intel Graphics",
+    "gpuBrand": "Intel",
+    "ram": "32GB LPDDR5X",
+    "ramGB": 32,
+    "storage": "1TB SSD",
+    "storageGB": 1000,
+    "display": "14\" 2.8K OLED",
+    "displaySize": 14,
+    "refreshRate": "120Hz",
+    "refreshRateHz": 120,
+    "battery": "Up to 16 hours",
+    "batteryHours": 16,
+    "weight": "1.09 kg",
+    "ports": [
+      "Thunderbolt 4",
+      "USB-A 3.2",
+      "HDMI 2.1",
+      "3.5mm Audio"
+    ],
+    "build": "Aluminum & magnesium alloy",
+    "keyboard": "Backlit chiclet, 1.5mm travel",
+    "webcam": "1080p IR with Windows Hello",
+    "cooling": "Dual-fan vapor chamber",
+    "aiFeatures": "NPU acceleration, Copilot ready",
+    "shortDescription": "Intel Core Ultra 7 165U · 32GB LPDDR5X · 1TB SSD",
+    "description": "The Lenovo ThinkPad X1 Carbon Gen 12 pairs a Intel Core Ultra 7 165U with Intel Graphics and a 14\" 2.8K OLED, delivering up to 16 hours of battery life in a 1.09 kg chassis. A balanced pick for business and premium workloads.",
+    "tags": [
+      "MIL-SPEC",
+      "Carbon Fiber"
+    ],
+    "pros": [
+      "Excellent business performance",
+      "Premium OLED display",
+      "Solid build quality from Lenovo"
+    ],
+    "cons": [
+      "Premium pricing",
+      "Limited port selection"
+    ],
+    "bestFor": [
+      "Best for business",
+      "Best for premium",
+      "Best for lightweight"
+    ],
+    "performance": {
+      "gaming": 35,
+      "editing": 60,
+      "coding": 88,
+      "aiml": 50
+    },
+    "images": [
+      "https://images.unsplash.com/photo-1531297484001-80022131f5a1?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1611186871348-b1ce696e52c9?auto=format&fit=crop&w=1200&q=80"
+    ],
+    "buyLinks": {
+      "amazon": "https://www.amazon.in",
+      "flipkart": "https://www.flipkart.com",
+      "official": "#"
+    }
+  },
+  {
+    "id": "lenovo-ideapad-slim-5",
+    "slug": "lenovo-ideapad-slim-5",
+    "name": "Lenovo IdeaPad Slim 5",
+    "brand": "Lenovo",
+    "category": [
+      "students",
+      "budget",
+      "programming"
+    ],
+    "os": "Windows",
+    "priceINR": 64990,
+    "priceUSD": 799,
+    "rating": 4.3,
+    "processor": "AMD Ryzen 7 8845HS",
+    "processorBrand": "AMD",
+    "gpu": "AMD Radeon 780M",
+    "gpuBrand": "AMD",
+    "ram": "16GB LPDDR5",
+    "ramGB": 16,
+    "storage": "512GB SSD",
+    "storageGB": 512,
+    "display": "14\" 2.2K IPS",
+    "displaySize": 14,
+    "refreshRate": "60Hz",
+    "refreshRateHz": 60,
+    "battery": "Up to 12 hours",
+    "batteryHours": 12,
+    "weight": "1.46 kg",
+    "ports": [
+      "Thunderbolt 4",
+      "USB-A 3.2",
+      "HDMI 2.1",
+      "3.5mm Audio"
+    ],
+    "build": "Aluminum & magnesium alloy",
+    "keyboard": "Backlit chiclet, 1.5mm travel",
+    "webcam": "1080p IR with Windows Hello",
+    "cooling": "Dual-fan vapor chamber",
+    "aiFeatures": "NPU acceleration, Copilot ready",
+    "shortDescription": "AMD Ryzen 7 8845HS · 16GB LPDDR5 · 512GB SSD",
+    "description": "The Lenovo IdeaPad Slim 5 pairs a AMD Ryzen 7 8845HS with AMD Radeon 780M and a 14\" 2.2K IPS, delivering up to 12 hours of battery life in a 1.46 kg chassis. A balanced pick for students and budget workloads.",
+    "tags": [
+      "Value",
+      "Aluminum"
+    ],
+    "pros": [
+      "Excellent students performance",
+      "Premium IPS display",
+      "Solid build quality from Lenovo"
+    ],
+    "cons": [
+      "Premium pricing",
+      "Limited port selection"
+    ],
+    "bestFor": [
+      "Best for students",
+      "Best for budget",
+      "Best for programming"
+    ],
+    "performance": {
+      "gaming": 30,
+      "editing": 50,
+      "coding": 75,
+      "aiml": 35
+    },
+    "images": [
+      "https://images.unsplash.com/photo-1484788984921-03950022c9ef?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1593642632559-0c6d3fc62b89?auto=format&fit=crop&w=1200&q=80"
+    ],
+    "buyLinks": {
+      "amazon": "https://www.amazon.in",
+      "flipkart": "https://www.flipkart.com",
+      "official": "#"
+    }
+  },
+  {
+    "id": "alienware-m18-r2",
+    "slug": "alienware-m18-r2",
+    "name": "Alienware m18 R2",
+    "brand": "Alienware",
+    "category": [
+      "gaming",
+      "expensive",
+      "creator"
+    ],
+    "os": "Windows",
+    "priceINR": 349990,
+    "priceUSD": 3499,
+    "rating": 4.5,
+    "processor": "Intel Core i9-14900HX",
+    "processorBrand": "Intel",
+    "gpu": "NVIDIA RTX 4090 16GB",
+    "gpuBrand": "NVIDIA",
+    "ram": "64GB DDR5",
+    "ramGB": 64,
+    "storage": "2TB SSD",
+    "storageGB": 2000,
+    "display": "18\" QHD+",
+    "displaySize": 18,
+    "refreshRate": "165Hz",
+    "refreshRateHz": 165,
+    "battery": "Up to 5 hours",
+    "batteryHours": 5,
+    "weight": "4.23 kg",
+    "ports": [
+      "Thunderbolt 4",
+      "USB-A 3.2",
+      "HDMI 2.1",
+      "3.5mm Audio"
+    ],
+    "build": "Aluminum & magnesium alloy",
+    "keyboard": "Backlit chiclet, 1.5mm travel",
+    "webcam": "1080p IR with Windows Hello",
+    "cooling": "Dual-fan vapor chamber",
+    "aiFeatures": "NPU acceleration, Copilot ready",
+    "shortDescription": "Intel Core i9-14900HX · 64GB DDR5 · 2TB SSD",
+    "description": "The Alienware m18 R2 pairs a Intel Core i9-14900HX with NVIDIA RTX 4090 16GB and a 18\" QHD+, delivering up to 5 hours of battery life in a 4.23 kg chassis. A balanced pick for gaming and expensive workloads.",
+    "tags": [
+      "RTX 4090",
+      "Desktop Replacement"
+    ],
+    "pros": [
+      "Excellent gaming performance",
+      "Premium IPS display",
+      "Solid build quality from Alienware"
+    ],
+    "cons": [
+      "Below-average battery life",
+      "On the heavier side"
+    ],
+    "bestFor": [
+      "Best for gaming",
+      "Best for expensive",
+      "Best for creator"
+    ],
+    "performance": {
+      "gaming": 98,
+      "editing": 80,
+      "coding": 75,
+      "aiml": 80
+    },
+    "images": [
+      "https://images.unsplash.com/photo-1504707748692-419802cf939d?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1541807084-5c52b6b3adef?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1588872657578-7efd1f1555ed?auto=format&fit=crop&w=1200&q=80"
+    ],
+    "buyLinks": {
+      "amazon": "https://www.amazon.in",
+      "flipkart": "https://www.flipkart.com",
+      "official": "#"
+    }
+  },
+  {
+    "id": "hp-omen-16",
+    "slug": "hp-omen-16",
+    "name": "HP Omen 16",
+    "brand": "HP",
+    "category": [
+      "gaming",
+      "creator"
+    ],
+    "os": "Windows",
+    "priceINR": 149990,
+    "priceUSD": 1599,
+    "rating": 4.4,
+    "processor": "Intel Core i7-14700HX",
+    "processorBrand": "Intel",
+    "gpu": "NVIDIA RTX 4070 8GB",
+    "gpuBrand": "NVIDIA",
+    "ram": "32GB DDR5",
+    "ramGB": 32,
+    "storage": "1TB SSD",
+    "storageGB": 1000,
+    "display": "16.1\" QHD IPS",
+    "displaySize": 16.1,
+    "refreshRate": "240Hz",
+    "refreshRateHz": 240,
+    "battery": "Up to 7 hours",
+    "batteryHours": 7,
+    "weight": "2.42 kg",
+    "ports": [
+      "Thunderbolt 4",
+      "USB-A 3.2",
+      "HDMI 2.1",
+      "3.5mm Audio"
+    ],
+    "build": "Aluminum & magnesium alloy",
+    "keyboard": "Backlit chiclet, 1.5mm travel",
+    "webcam": "1080p IR with Windows Hello",
+    "cooling": "Dual-fan vapor chamber",
+    "aiFeatures": "NPU acceleration, Copilot ready",
+    "shortDescription": "Intel Core i7-14700HX · 32GB DDR5 · 1TB SSD",
+    "description": "The HP Omen 16 pairs a Intel Core i7-14700HX with NVIDIA RTX 4070 8GB and a 16.1\" QHD IPS, delivering up to 7 hours of battery life in a 2.42 kg chassis. A balanced pick for gaming and creator workloads.",
+    "tags": [
+      "240Hz",
+      "Tempest Cooling"
+    ],
+    "pros": [
+      "Excellent gaming performance",
+      "Premium IPS display",
+      "Solid build quality from HP"
+    ],
+    "cons": [
+      "Below-average battery life",
+      "On the heavier side"
+    ],
+    "bestFor": [
+      "Best for gaming",
+      "Best for creator"
+    ],
+    "performance": {
+      "gaming": 95,
+      "editing": 80,
+      "coding": 75,
+      "aiml": 80
+    },
+    "images": [
+      "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1611186871348-b1ce696e52c9?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?auto=format&fit=crop&w=1200&q=80"
+    ],
+    "buyLinks": {
+      "amazon": "https://www.amazon.in",
+      "flipkart": "https://www.flipkart.com",
+      "official": "#"
+    }
+  },
+  {
+    "id": "hp-pavilion-plus-14",
+    "slug": "hp-pavilion-plus-14",
+    "name": "HP Pavilion Plus 14",
+    "brand": "HP",
+    "category": [
+      "students",
+      "budget",
+      "programming"
+    ],
+    "os": "Windows",
+    "priceINR": 74990,
+    "priceUSD": 899,
+    "rating": 4.2,
+    "processor": "Intel Core Ultra 5 125H",
+    "processorBrand": "Intel",
+    "gpu": "Intel Arc Graphics",
+    "gpuBrand": "Intel",
+    "ram": "16GB LPDDR5",
+    "ramGB": 16,
+    "storage": "512GB SSD",
+    "storageGB": 512,
+    "display": "14\" 2.8K OLED",
+    "displaySize": 14,
+    "refreshRate": "90Hz",
+    "refreshRateHz": 90,
+    "battery": "Up to 10 hours",
+    "batteryHours": 10,
+    "weight": "1.41 kg",
+    "ports": [
+      "Thunderbolt 4",
+      "USB-A 3.2",
+      "HDMI 2.1",
+      "3.5mm Audio"
+    ],
+    "build": "Aluminum & magnesium alloy",
+    "keyboard": "Backlit chiclet, 1.5mm travel",
+    "webcam": "1080p IR with Windows Hello",
+    "cooling": "Dual-fan vapor chamber",
+    "aiFeatures": "NPU acceleration, Copilot ready",
+    "shortDescription": "Intel Core Ultra 5 125H · 16GB LPDDR5 · 512GB SSD",
+    "description": "The HP Pavilion Plus 14 pairs a Intel Core Ultra 5 125H with Intel Arc Graphics and a 14\" 2.8K OLED, delivering up to 10 hours of battery life in a 1.41 kg chassis. A balanced pick for students and budget workloads.",
+    "tags": [
+      "OLED on a Budget"
+    ],
+    "pros": [
+      "Excellent students performance",
+      "Premium OLED display",
+      "Solid build quality from HP"
+    ],
+    "cons": [
+      "Premium pricing",
+      "Limited port selection"
+    ],
+    "bestFor": [
+      "Best for students",
+      "Best for budget",
+      "Best for programming"
+    ],
+    "performance": {
+      "gaming": 30,
+      "editing": 50,
+      "coding": 75,
+      "aiml": 35
+    },
+    "images": [
+      "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1593642632559-0c6d3fc62b89?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1531297484001-80022131f5a1?auto=format&fit=crop&w=1200&q=80"
+    ],
+    "buyLinks": {
+      "amazon": "https://www.amazon.in",
+      "flipkart": "https://www.flipkart.com",
+      "official": "#"
+    }
+  },
+  {
+    "id": "acer-predator-helios-16",
+    "slug": "acer-predator-helios-16",
+    "name": "Acer Predator Helios 16",
+    "brand": "Acer",
+    "category": [
+      "gaming",
+      "creator"
+    ],
+    "os": "Windows",
+    "priceINR": 189990,
+    "priceUSD": 1999,
+    "rating": 4.4,
+    "processor": "Intel Core i9-14900HX",
+    "processorBrand": "Intel",
+    "gpu": "NVIDIA RTX 4080 12GB",
+    "gpuBrand": "NVIDIA",
+    "ram": "32GB DDR5",
+    "ramGB": 32,
+    "storage": "1TB SSD",
+    "storageGB": 1000,
+    "display": "16\" Mini-LED 2.5K",
+    "displaySize": 16,
+    "refreshRate": "250Hz",
+    "refreshRateHz": 250,
+    "battery": "Up to 6 hours",
+    "batteryHours": 6,
+    "weight": "2.7 kg",
+    "ports": [
+      "Thunderbolt 4",
+      "USB-A 3.2",
+      "HDMI 2.1",
+      "3.5mm Audio"
+    ],
+    "build": "Aluminum & magnesium alloy",
+    "keyboard": "Backlit chiclet, 1.5mm travel",
+    "webcam": "1080p IR with Windows Hello",
+    "cooling": "Dual-fan vapor chamber",
+    "aiFeatures": "NPU acceleration, Copilot ready",
+    "shortDescription": "Intel Core i9-14900HX · 32GB DDR5 · 1TB SSD",
+    "description": "The Acer Predator Helios 16 pairs a Intel Core i9-14900HX with NVIDIA RTX 4080 12GB and a 16\" Mini-LED 2.5K, delivering up to 6 hours of battery life in a 2.7 kg chassis. A balanced pick for gaming and creator workloads.",
+    "tags": [
+      "Mini-LED",
+      "250Hz"
+    ],
+    "pros": [
+      "Excellent gaming performance",
+      "Premium IPS display",
+      "Solid build quality from Acer"
+    ],
+    "cons": [
+      "Below-average battery life",
+      "On the heavier side"
+    ],
+    "bestFor": [
+      "Best for gaming",
+      "Best for creator"
+    ],
+    "performance": {
+      "gaming": 95,
+      "editing": 80,
+      "coding": 75,
+      "aiml": 80
+    },
+    "images": [
+      "https://images.unsplash.com/photo-1541807084-5c52b6b3adef?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1588872657578-7efd1f1555ed?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1484788984921-03950022c9ef?auto=format&fit=crop&w=1200&q=80"
+    ],
+    "buyLinks": {
+      "amazon": "https://www.amazon.in",
+      "flipkart": "https://www.flipkart.com",
+      "official": "#"
+    }
+  },
+  {
+    "id": "acer-aspire-5",
+    "slug": "acer-aspire-5",
+    "name": "Acer Aspire 5",
+    "brand": "Acer",
+    "category": [
+      "budget",
+      "students"
+    ],
+    "os": "Windows",
+    "priceINR": 54990,
+    "priceUSD": 649,
+    "rating": 4.1,
+    "processor": "Intel Core i5-1335U",
+    "processorBrand": "Intel",
+    "gpu": "Intel Iris Xe",
+    "gpuBrand": "Intel",
+    "ram": "16GB DDR5",
+    "ramGB": 16,
+    "storage": "512GB SSD",
+    "storageGB": 512,
+    "display": "15.6\" FHD IPS",
+    "displaySize": 15.6,
+    "refreshRate": "60Hz",
+    "refreshRateHz": 60,
+    "battery": "Up to 9 hours",
+    "batteryHours": 9,
+    "weight": "1.7 kg",
+    "ports": [
+      "Thunderbolt 4",
+      "USB-A 3.2",
+      "HDMI 2.1",
+      "3.5mm Audio"
+    ],
+    "build": "Aluminum & magnesium alloy",
+    "keyboard": "Backlit chiclet, 1.5mm travel",
+    "webcam": "1080p IR with Windows Hello",
+    "cooling": "Dual-fan vapor chamber",
+    "aiFeatures": "NPU acceleration, Copilot ready",
+    "shortDescription": "Intel Core i5-1335U · 16GB DDR5 · 512GB SSD",
+    "description": "The Acer Aspire 5 pairs a Intel Core i5-1335U with Intel Iris Xe and a 15.6\" FHD IPS, delivering up to 9 hours of battery life in a 1.7 kg chassis. A balanced pick for budget and students workloads.",
+    "tags": [
+      "Reliable",
+      "Affordable"
+    ],
+    "pros": [
+      "Excellent budget performance",
+      "Premium IPS display",
+      "Solid build quality from Acer"
+    ],
+    "cons": [
+      "Premium pricing",
+      "Limited port selection"
+    ],
+    "bestFor": [
+      "Best for budget",
+      "Best for students"
+    ],
+    "performance": {
+      "gaming": 25,
+      "editing": 40,
+      "coding": 65,
+      "aiml": 25
+    },
+    "images": [
+      "https://images.unsplash.com/photo-1611186871348-b1ce696e52c9?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1504707748692-419802cf939d?auto=format&fit=crop&w=1200&q=80"
+    ],
+    "buyLinks": {
+      "amazon": "https://www.amazon.in",
+      "flipkart": "https://www.flipkart.com",
+      "official": "#"
+    }
+  },
+  {
+    "id": "msi-stealth-16-ai-studio",
+    "slug": "msi-stealth-16-ai-studio",
+    "name": "MSI Stealth 16 AI Studio",
+    "brand": "MSI",
+    "category": [
+      "creator",
+      "gaming",
+      "premium",
+      "aiml"
+    ],
+    "os": "Windows",
+    "priceINR": 269990,
+    "priceUSD": 2799,
+    "rating": 4.5,
+    "processor": "Intel Core Ultra 9 185H",
+    "processorBrand": "Intel",
+    "gpu": "NVIDIA RTX 4080 12GB",
+    "gpuBrand": "NVIDIA",
+    "ram": "32GB DDR5",
+    "ramGB": 32,
+    "storage": "2TB SSD",
+    "storageGB": 2000,
+    "display": "16\" UHD+ OLED",
+    "displaySize": 16,
+    "refreshRate": "120Hz",
+    "refreshRateHz": 120,
+    "battery": "Up to 8 hours",
+    "batteryHours": 8,
+    "weight": "1.99 kg",
+    "ports": [
+      "Thunderbolt 4",
+      "USB-A 3.2",
+      "HDMI 2.1",
+      "3.5mm Audio"
+    ],
+    "build": "Aluminum & magnesium alloy",
+    "keyboard": "Backlit chiclet, 1.5mm travel",
+    "webcam": "1080p IR with Windows Hello",
+    "cooling": "Dual-fan vapor chamber",
+    "aiFeatures": "NPU acceleration, Copilot ready",
+    "shortDescription": "Intel Core Ultra 9 185H · 32GB DDR5 · 2TB SSD",
+    "description": "The MSI Stealth 16 AI Studio pairs a Intel Core Ultra 9 185H with NVIDIA RTX 4080 12GB and a 16\" UHD+ OLED, delivering up to 8 hours of battery life in a 1.99 kg chassis. A balanced pick for creator and gaming workloads.",
+    "tags": [
+      "Copilot+",
+      "4K OLED"
+    ],
+    "pros": [
+      "Excellent creator performance",
+      "Premium OLED display",
+      "Solid build quality from MSI"
+    ],
+    "cons": [
+      "Premium pricing",
+      "Limited port selection"
+    ],
+    "bestFor": [
+      "Best for creator",
+      "Best for gaming",
+      "Best for premium"
+    ],
+    "performance": {
+      "gaming": 75,
+      "editing": 95,
+      "coding": 80,
+      "aiml": 85
+    },
+    "images": [
+      "https://images.unsplash.com/photo-1593642632559-0c6d3fc62b89?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1531297484001-80022131f5a1?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=1200&q=80"
+    ],
+    "buyLinks": {
+      "amazon": "https://www.amazon.in",
+      "flipkart": "https://www.flipkart.com",
+      "official": "#"
+    }
+  },
+  {
+    "id": "razer-blade-16-2024",
+    "slug": "razer-blade-16-2024",
+    "name": "Razer Blade 16 (2024)",
+    "brand": "Razer",
+    "category": [
+      "gaming",
+      "creator",
+      "expensive",
+      "premium"
+    ],
+    "os": "Windows",
+    "priceINR": 319990,
+    "priceUSD": 3299,
+    "rating": 4.6,
+    "processor": "Intel Core i9-14900HX",
+    "processorBrand": "Intel",
+    "gpu": "NVIDIA RTX 4090 16GB",
+    "gpuBrand": "NVIDIA",
+    "ram": "32GB DDR5",
+    "ramGB": 32,
+    "storage": "2TB SSD",
+    "storageGB": 2000,
+    "display": "16\" Dual-mode Mini-LED",
+    "displaySize": 16,
+    "refreshRate": "240Hz",
+    "refreshRateHz": 240,
+    "battery": "Up to 7 hours",
+    "batteryHours": 7,
+    "weight": "2.45 kg",
+    "ports": [
+      "Thunderbolt 4",
+      "USB-A 3.2",
+      "HDMI 2.1",
+      "3.5mm Audio"
+    ],
+    "build": "CNC Aluminum unibody",
+    "keyboard": "Backlit chiclet, 1.5mm travel",
+    "webcam": "1080p IR with Windows Hello",
+    "cooling": "Dual-fan vapor chamber",
+    "aiFeatures": "NPU acceleration, Copilot ready",
+    "shortDescription": "Intel Core i9-14900HX · 32GB DDR5 · 2TB SSD",
+    "description": "The Razer Blade 16 (2024) pairs a Intel Core i9-14900HX with NVIDIA RTX 4090 16GB and a 16\" Dual-mode Mini-LED, delivering up to 7 hours of battery life in a 2.45 kg chassis. A balanced pick for gaming and creator workloads.",
+    "tags": [
+      "Dual-mode Display",
+      "CNC Aluminum"
+    ],
+    "pros": [
+      "Excellent gaming performance",
+      "Premium IPS display",
+      "Solid build quality from Razer"
+    ],
+    "cons": [
+      "Below-average battery life",
+      "On the heavier side"
+    ],
+    "bestFor": [
+      "Best for gaming",
+      "Best for creator",
+      "Best for expensive"
+    ],
+    "performance": {
+      "gaming": 98,
+      "editing": 80,
+      "coding": 75,
+      "aiml": 80
+    },
+    "images": [
+      "https://images.unsplash.com/photo-1588872657578-7efd1f1555ed?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1484788984921-03950022c9ef?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?auto=format&fit=crop&w=1200&q=80"
+    ],
+    "buyLinks": {
+      "amazon": "https://www.amazon.in",
+      "flipkart": "https://www.flipkart.com",
+      "official": "#"
+    }
+  },
+  {
+    "id": "microsoft-surface-laptop-7-15",
+    "slug": "microsoft-surface-laptop-7-15",
+    "name": "Microsoft Surface Laptop 7 (15\")",
+    "brand": "Microsoft",
+    "category": [
+      "premium",
+      "business",
+      "aiml",
+      "programming"
+    ],
+    "os": "Windows",
+    "priceINR": 149990,
+    "priceUSD": 1499,
+    "rating": 4.6,
+    "processor": "Snapdragon X Elite",
+    "processorBrand": "Qualcomm",
+    "gpu": "Qualcomm Adreno",
+    "gpuBrand": "Intel",
+    "ram": "16GB LPDDR5X",
+    "ramGB": 16,
+    "storage": "512GB SSD",
+    "storageGB": 512,
+    "display": "15\" PixelSense Touch",
+    "displaySize": 15,
+    "refreshRate": "120Hz",
+    "refreshRateHz": 120,
+    "battery": "Up to 22 hours",
+    "batteryHours": 22,
+    "weight": "1.66 kg",
+    "ports": [
+      "Thunderbolt 4",
+      "USB-A 3.2",
+      "HDMI 2.1",
+      "3.5mm Audio"
+    ],
+    "build": "Aluminum & magnesium alloy",
+    "keyboard": "Backlit chiclet, 1.5mm travel",
+    "webcam": "1080p IR with Windows Hello",
+    "cooling": "Dual-fan vapor chamber",
+    "aiFeatures": "NPU acceleration, Copilot ready",
+    "shortDescription": "Snapdragon X Elite · 16GB LPDDR5X · 512GB SSD",
+    "description": "The Microsoft Surface Laptop 7 (15\") pairs a Snapdragon X Elite with Qualcomm Adreno and a 15\" PixelSense Touch, delivering up to 22 hours of battery life in a 1.66 kg chassis. A balanced pick for premium and business workloads.",
+    "tags": [
+      "Copilot+ PC",
+      "ARM"
+    ],
+    "pros": [
+      "Excellent premium performance",
+      "Premium IPS display",
+      "Solid build quality from Microsoft"
+    ],
+    "cons": [
+      "Premium pricing",
+      "Limited port selection"
+    ],
+    "bestFor": [
+      "Best for premium",
+      "Best for business",
+      "Best for aiml"
+    ],
+    "performance": {
+      "gaming": 70,
+      "editing": 85,
+      "coding": 90,
+      "aiml": 75
+    },
+    "images": [
+      "https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1504707748692-419802cf939d?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1541807084-5c52b6b3adef?auto=format&fit=crop&w=1200&q=80"
+    ],
+    "buyLinks": {
+      "amazon": "https://www.amazon.in",
+      "flipkart": "https://www.flipkart.com",
+      "official": "#"
+    }
+  },
+  {
+    "id": "samsung-galaxy-book4-pro-16",
+    "slug": "samsung-galaxy-book4-pro-16",
+    "name": "Samsung Galaxy Book4 Pro 16",
+    "brand": "Samsung",
+    "category": [
+      "premium",
+      "lightweight",
+      "creator"
+    ],
+    "os": "Windows",
+    "priceINR": 159990,
+    "priceUSD": 1649,
+    "rating": 4.4,
+    "processor": "Intel Core Ultra 7 155H",
+    "processorBrand": "Intel",
+    "gpu": "Intel Arc Graphics",
+    "gpuBrand": "Intel",
+    "ram": "16GB LPDDR5X",
+    "ramGB": 16,
+    "storage": "1TB SSD",
+    "storageGB": 1000,
+    "display": "16\" 3K AMOLED",
+    "displaySize": 16,
+    "refreshRate": "120Hz",
+    "refreshRateHz": 120,
+    "battery": "Up to 21 hours",
+    "batteryHours": 21,
+    "weight": "1.56 kg",
+    "ports": [
+      "Thunderbolt 4",
+      "USB-A 3.2",
+      "HDMI 2.1",
+      "3.5mm Audio"
+    ],
+    "build": "Aluminum & magnesium alloy",
+    "keyboard": "Backlit chiclet, 1.5mm travel",
+    "webcam": "1080p IR with Windows Hello",
+    "cooling": "Dual-fan vapor chamber",
+    "aiFeatures": "NPU acceleration, Copilot ready",
+    "shortDescription": "Intel Core Ultra 7 155H · 16GB LPDDR5X · 1TB SSD",
+    "description": "The Samsung Galaxy Book4 Pro 16 pairs a Intel Core Ultra 7 155H with Intel Arc Graphics and a 16\" 3K AMOLED, delivering up to 21 hours of battery life in a 1.56 kg chassis. A balanced pick for premium and lightweight workloads.",
+    "tags": [
+      "AMOLED",
+      "Ultra-thin"
+    ],
+    "pros": [
+      "Excellent premium performance",
+      "Premium OLED display",
+      "Solid build quality from Samsung"
+    ],
+    "cons": [
+      "Premium pricing",
+      "Limited port selection"
+    ],
+    "bestFor": [
+      "Best for premium",
+      "Best for lightweight",
+      "Best for creator"
+    ],
+    "performance": {
+      "gaming": 70,
+      "editing": 85,
+      "coding": 90,
+      "aiml": 75
+    },
+    "images": [
+      "https://images.unsplash.com/photo-1531297484001-80022131f5a1?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1611186871348-b1ce696e52c9?auto=format&fit=crop&w=1200&q=80"
+    ],
+    "buyLinks": {
+      "amazon": "https://www.amazon.in",
+      "flipkart": "https://www.flipkart.com",
+      "official": "#"
+    }
+  },
+  {
+    "id": "framework-laptop-13-ryzen-7040",
+    "slug": "framework-laptop-13-ryzen-7040",
+    "name": "Framework Laptop 13 (Ryzen 7040)",
+    "brand": "Framework",
+    "category": [
+      "programming",
+      "lightweight",
+      "business"
+    ],
+    "os": "Linux",
+    "priceINR": 129990,
+    "priceUSD": 1399,
+    "rating": 4.5,
+    "processor": "AMD Ryzen 7 7840U",
+    "processorBrand": "AMD",
+    "gpu": "AMD Radeon 780M",
+    "gpuBrand": "AMD",
+    "ram": "32GB DDR5",
+    "ramGB": 32,
+    "storage": "1TB SSD",
+    "storageGB": 1000,
+    "display": "13.5\" 2.2K IPS",
+    "displaySize": 13.5,
+    "refreshRate": "60Hz",
+    "refreshRateHz": 60,
+    "battery": "Up to 10 hours",
+    "batteryHours": 10,
+    "weight": "1.3 kg",
+    "ports": [
+      "Thunderbolt 4",
+      "USB-A 3.2",
+      "HDMI 2.1",
+      "3.5mm Audio"
+    ],
+    "build": "Aluminum & magnesium alloy",
+    "keyboard": "Backlit chiclet, 1.5mm travel",
+    "webcam": "1080p IR with Windows Hello",
+    "cooling": "Dual-fan vapor chamber",
+    "aiFeatures": "NPU acceleration, Copilot ready",
+    "shortDescription": "AMD Ryzen 7 7840U · 32GB DDR5 · 1TB SSD",
+    "description": "The Framework Laptop 13 (Ryzen 7040) pairs a AMD Ryzen 7 7840U with AMD Radeon 780M and a 13.5\" 2.2K IPS, delivering up to 10 hours of battery life in a 1.3 kg chassis. A balanced pick for programming and lightweight workloads.",
+    "tags": [
+      "Modular",
+      "Repairable"
+    ],
+    "pros": [
+      "Excellent programming performance",
+      "Premium IPS display",
+      "Solid build quality from Framework"
+    ],
+    "cons": [
+      "Premium pricing",
+      "Limited port selection"
+    ],
+    "bestFor": [
+      "Best for programming",
+      "Best for lightweight",
+      "Best for business"
+    ],
+    "performance": {
+      "gaming": 40,
+      "editing": 60,
+      "coding": 90,
+      "aiml": 55
+    },
+    "images": [
+      "https://images.unsplash.com/photo-1484788984921-03950022c9ef?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1593642632559-0c6d3fc62b89?auto=format&fit=crop&w=1200&q=80"
+    ],
+    "buyLinks": {
+      "amazon": "https://www.amazon.in",
+      "flipkart": "https://www.flipkart.com",
+      "official": "#"
+    }
+  },
+  {
+    "id": "lenovo-chromebook-plus",
+    "slug": "lenovo-chromebook-plus",
+    "name": "Lenovo Chromebook Plus",
+    "brand": "Lenovo",
+    "category": [
+      "budget",
+      "students",
+      "lightweight"
+    ],
+    "os": "ChromeOS",
+    "priceINR": 42990,
+    "priceUSD": 499,
+    "rating": 4.2,
+    "processor": "Intel Core i3-1315U",
+    "processorBrand": "Intel",
+    "gpu": "Intel UHD Graphics",
+    "gpuBrand": "Intel",
+    "ram": "8GB LPDDR5",
+    "ramGB": 8,
+    "storage": "256GB SSD",
+    "storageGB": 256,
+    "display": "14\" 2K IPS",
+    "displaySize": 14,
+    "refreshRate": "60Hz",
+    "refreshRateHz": 60,
+    "battery": "Up to 12 hours",
+    "batteryHours": 12,
+    "weight": "1.4 kg",
+    "ports": [
+      "Thunderbolt 4",
+      "USB-A 3.2",
+      "HDMI 2.1",
+      "3.5mm Audio"
+    ],
+    "build": "Aluminum & magnesium alloy",
+    "keyboard": "Backlit chiclet, 1.5mm travel",
+    "webcam": "1080p IR with Windows Hello",
+    "cooling": "Dual-fan vapor chamber",
+    "aiFeatures": "NPU acceleration, Copilot ready",
+    "shortDescription": "Intel Core i3-1315U · 8GB LPDDR5 · 256GB SSD",
+    "description": "The Lenovo Chromebook Plus pairs a Intel Core i3-1315U with Intel UHD Graphics and a 14\" 2K IPS, delivering up to 12 hours of battery life in a 1.4 kg chassis. A balanced pick for budget and students workloads.",
+    "tags": [
+      "ChromeOS",
+      "Google AI"
+    ],
+    "pros": [
+      "Excellent budget performance",
+      "Premium IPS display",
+      "Solid build quality from Lenovo"
+    ],
+    "cons": [
+      "Premium pricing",
+      "Limited port selection"
+    ],
+    "bestFor": [
+      "Best for budget",
+      "Best for students",
+      "Best for lightweight"
+    ],
+    "performance": {
+      "gaming": 25,
+      "editing": 40,
+      "coding": 65,
+      "aiml": 25
+    },
+    "images": [
+      "https://images.unsplash.com/photo-1504707748692-419802cf939d?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1541807084-5c52b6b3adef?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1588872657578-7efd1f1555ed?auto=format&fit=crop&w=1200&q=80"
+    ],
+    "buyLinks": {
+      "amazon": "https://www.amazon.in",
+      "flipkart": "https://www.flipkart.com",
+      "official": "#"
+    }
+  }
+]
