@@ -9,38 +9,154 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
+import { Route as ContactRouteImport } from './routes/contact'
+import { Route as CompareRouteImport } from './routes/compare'
+import { Route as AboutRouteImport } from './routes/about'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as TopListsIndexRouteImport } from './routes/top-lists.index'
+import { Route as LaptopsIndexRouteImport } from './routes/laptops.index'
+import { Route as TopListsSlugRouteImport } from './routes/top-lists.$slug'
+import { Route as LaptopsSlugRouteImport } from './routes/laptops.$slug'
 
+const ContactRoute = ContactRouteImport.update({
+  id: '/contact',
+  path: '/contact',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const CompareRoute = CompareRouteImport.update({
+  id: '/compare',
+  path: '/compare',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AboutRoute = AboutRouteImport.update({
+  id: '/about',
+  path: '/about',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const TopListsIndexRoute = TopListsIndexRouteImport.update({
+  id: '/top-lists/',
+  path: '/top-lists/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const LaptopsIndexRoute = LaptopsIndexRouteImport.update({
+  id: '/laptops/',
+  path: '/laptops/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const TopListsSlugRoute = TopListsSlugRouteImport.update({
+  id: '/top-lists/$slug',
+  path: '/top-lists/$slug',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const LaptopsSlugRoute = LaptopsSlugRouteImport.update({
+  id: '/laptops/$slug',
+  path: '/laptops/$slug',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/about': typeof AboutRoute
+  '/compare': typeof CompareRoute
+  '/contact': typeof ContactRoute
+  '/laptops/$slug': typeof LaptopsSlugRoute
+  '/top-lists/$slug': typeof TopListsSlugRoute
+  '/laptops/': typeof LaptopsIndexRoute
+  '/top-lists/': typeof TopListsIndexRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/about': typeof AboutRoute
+  '/compare': typeof CompareRoute
+  '/contact': typeof ContactRoute
+  '/laptops/$slug': typeof LaptopsSlugRoute
+  '/top-lists/$slug': typeof TopListsSlugRoute
+  '/laptops': typeof LaptopsIndexRoute
+  '/top-lists': typeof TopListsIndexRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/about': typeof AboutRoute
+  '/compare': typeof CompareRoute
+  '/contact': typeof ContactRoute
+  '/laptops/$slug': typeof LaptopsSlugRoute
+  '/top-lists/$slug': typeof TopListsSlugRoute
+  '/laptops/': typeof LaptopsIndexRoute
+  '/top-lists/': typeof TopListsIndexRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/'
+  fullPaths:
+    | '/'
+    | '/about'
+    | '/compare'
+    | '/contact'
+    | '/laptops/$slug'
+    | '/top-lists/$slug'
+    | '/laptops/'
+    | '/top-lists/'
   fileRoutesByTo: FileRoutesByTo
-  to: '/'
-  id: '__root__' | '/'
+  to:
+    | '/'
+    | '/about'
+    | '/compare'
+    | '/contact'
+    | '/laptops/$slug'
+    | '/top-lists/$slug'
+    | '/laptops'
+    | '/top-lists'
+  id:
+    | '__root__'
+    | '/'
+    | '/about'
+    | '/compare'
+    | '/contact'
+    | '/laptops/$slug'
+    | '/top-lists/$slug'
+    | '/laptops/'
+    | '/top-lists/'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  AboutRoute: typeof AboutRoute
+  CompareRoute: typeof CompareRoute
+  ContactRoute: typeof ContactRoute
+  LaptopsSlugRoute: typeof LaptopsSlugRoute
+  TopListsSlugRoute: typeof TopListsSlugRoute
+  LaptopsIndexRoute: typeof LaptopsIndexRoute
+  TopListsIndexRoute: typeof TopListsIndexRoute
 }
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
+    '/contact': {
+      id: '/contact'
+      path: '/contact'
+      fullPath: '/contact'
+      preLoaderRoute: typeof ContactRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/compare': {
+      id: '/compare'
+      path: '/compare'
+      fullPath: '/compare'
+      preLoaderRoute: typeof CompareRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/about': {
+      id: '/about'
+      path: '/about'
+      fullPath: '/about'
+      preLoaderRoute: typeof AboutRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/': {
       id: '/'
       path: '/'
@@ -48,12 +164,57 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/top-lists/': {
+      id: '/top-lists/'
+      path: '/top-lists'
+      fullPath: '/top-lists/'
+      preLoaderRoute: typeof TopListsIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/laptops/': {
+      id: '/laptops/'
+      path: '/laptops'
+      fullPath: '/laptops/'
+      preLoaderRoute: typeof LaptopsIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/top-lists/$slug': {
+      id: '/top-lists/$slug'
+      path: '/top-lists/$slug'
+      fullPath: '/top-lists/$slug'
+      preLoaderRoute: typeof TopListsSlugRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/laptops/$slug': {
+      id: '/laptops/$slug'
+      path: '/laptops/$slug'
+      fullPath: '/laptops/$slug'
+      preLoaderRoute: typeof LaptopsSlugRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  AboutRoute: AboutRoute,
+  CompareRoute: CompareRoute,
+  ContactRoute: ContactRoute,
+  LaptopsSlugRoute: LaptopsSlugRoute,
+  TopListsSlugRoute: TopListsSlugRoute,
+  LaptopsIndexRoute: LaptopsIndexRoute,
+  TopListsIndexRoute: TopListsIndexRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
   ._addFileTypes<FileRouteTypes>()
+
+import type { getRouter } from './router.tsx'
+import type { startInstance } from './start.ts'
+declare module '@tanstack/react-start' {
+  interface Register {
+    ssr: true
+    router: Awaited<ReturnType<typeof getRouter>>
+    config: Awaited<ReturnType<typeof startInstance.getOptions>>
+  }
+}
