@@ -12,6 +12,7 @@ export const Route = createFileRoute("/top-lists/$slug")({
   head: ({ loaderData }) => {
     const t = loaderData?.list;
     if (!t) return { meta: [{ title: "Top List — Laptopia" }] };
+    const laps = loaderData?.laptops ?? [];
     return {
       meta: [
         { title: `${t.title} — Laptopia` },
@@ -20,6 +21,23 @@ export const Route = createFileRoute("/top-lists/$slug")({
         { property: "og:description", content: t.description },
       ],
       links: [{ rel: "canonical", href: `/top-lists/${t.slug}` }],
+      scripts: [
+        {
+          type: "application/ld+json",
+          children: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "ItemList",
+            name: t.title,
+            description: t.description,
+            itemListElement: laps.map((l, i) => ({
+              "@type": "ListItem",
+              position: i + 1,
+              url: `/laptops/${l.slug}`,
+              name: l.name,
+            })),
+          }),
+        },
+      ],
     };
   },
   component: TopListPage,
