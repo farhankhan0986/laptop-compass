@@ -1,9 +1,13 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { useState } from "react";
+import { useNavigate } from "@tanstack/react-router";
 import { getLaptops, formatINR, formatUSD } from "@/lib/data";
 import type { Laptop } from "@/lib/data/types";
 
 export const Route = createFileRoute("/compare")({
+  validateSearch: (s: Record<string, unknown>) => ({
+    a: typeof s.a === "string" ? s.a : undefined,
+    b: typeof s.b === "string" ? s.b : undefined,
+  }),
   head: () => ({
     meta: [
       { title: "Compare Laptops — Laptopia" },
@@ -18,10 +22,12 @@ export const Route = createFileRoute("/compare")({
 
 function Compare() {
   const all = getLaptops();
-  const [aId, setAId] = useState(all[0].id);
-  const [bId, setBId] = useState(all[1].id);
-  const a = all.find((l) => l.id === aId)!;
-  const b = all.find((l) => l.id === bId)!;
+  const { a: aSlug, b: bSlug } = Route.useSearch();
+  const navigate = useNavigate({ from: "/compare" });
+  const a = all.find((l) => l.slug === aSlug) ?? all[0];
+  const b = all.find((l) => l.slug === bSlug) ?? all[1];
+  const setA = (slug: string) => navigate({ search: (p: { a?: string; b?: string }) => ({ ...p, a: slug }) });
+  const setB = (slug: string) => navigate({ search: (p: { a?: string; b?: string }) => ({ ...p, b: slug }) });
 
   const rows: [string, (l: Laptop) => string | number][] = [
     ["Price (INR)", (l) => formatINR(l.priceINR)],
@@ -51,8 +57,8 @@ function Compare() {
 
       <div className="grid grid-cols-2 gap-4">
         {[
-          { l: a, set: setAId },
-          { l: b, set: setBId },
+          { l: a, set: setA },
+          { l: b, set: setB },
         ].map((col, i) => (
           <div key={i} className="overflow-hidden rounded-lg border border-border bg-card">
             <div className="aspect-[4/3] overflow-hidden">
@@ -60,12 +66,12 @@ function Compare() {
             </div>
             <div className="p-4">
               <select
-                value={col.l.id}
+                value={col.l.slug}
                 onChange={(e) => col.set(e.target.value)}
                 className="w-full rounded-md border border-border bg-background px-3 py-2 text-sm outline-none"
               >
                 {all.map((l) => (
-                  <option key={l.id} value={l.id}>{l.name}</option>
+                  <option key={l.id} value={l.slug}>{l.name}</option>
                 ))}
               </select>
             </div>

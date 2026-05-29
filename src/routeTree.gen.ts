@@ -15,8 +15,10 @@ import { Route as AboutRouteImport } from './routes/about'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as TopListsIndexRouteImport } from './routes/top-lists.index'
 import { Route as LaptopsIndexRouteImport } from './routes/laptops.index'
+import { Route as CategoriesIndexRouteImport } from './routes/categories.index'
 import { Route as TopListsSlugRouteImport } from './routes/top-lists.$slug'
 import { Route as LaptopsSlugRouteImport } from './routes/laptops.$slug'
+import { Route as CategoriesSlugRouteImport } from './routes/categories.$slug'
 
 const ContactRoute = ContactRouteImport.update({
   id: '/contact',
@@ -48,6 +50,11 @@ const LaptopsIndexRoute = LaptopsIndexRouteImport.update({
   path: '/laptops/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const CategoriesIndexRoute = CategoriesIndexRouteImport.update({
+  id: '/categories/',
+  path: '/categories/',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const TopListsSlugRoute = TopListsSlugRouteImport.update({
   id: '/top-lists/$slug',
   path: '/top-lists/$slug',
@@ -58,14 +65,21 @@ const LaptopsSlugRoute = LaptopsSlugRouteImport.update({
   path: '/laptops/$slug',
   getParentRoute: () => rootRouteImport,
 } as any)
+const CategoriesSlugRoute = CategoriesSlugRouteImport.update({
+  id: '/categories/$slug',
+  path: '/categories/$slug',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
   '/compare': typeof CompareRoute
   '/contact': typeof ContactRoute
+  '/categories/$slug': typeof CategoriesSlugRoute
   '/laptops/$slug': typeof LaptopsSlugRoute
   '/top-lists/$slug': typeof TopListsSlugRoute
+  '/categories/': typeof CategoriesIndexRoute
   '/laptops/': typeof LaptopsIndexRoute
   '/top-lists/': typeof TopListsIndexRoute
 }
@@ -74,8 +88,10 @@ export interface FileRoutesByTo {
   '/about': typeof AboutRoute
   '/compare': typeof CompareRoute
   '/contact': typeof ContactRoute
+  '/categories/$slug': typeof CategoriesSlugRoute
   '/laptops/$slug': typeof LaptopsSlugRoute
   '/top-lists/$slug': typeof TopListsSlugRoute
+  '/categories': typeof CategoriesIndexRoute
   '/laptops': typeof LaptopsIndexRoute
   '/top-lists': typeof TopListsIndexRoute
 }
@@ -85,8 +101,10 @@ export interface FileRoutesById {
   '/about': typeof AboutRoute
   '/compare': typeof CompareRoute
   '/contact': typeof ContactRoute
+  '/categories/$slug': typeof CategoriesSlugRoute
   '/laptops/$slug': typeof LaptopsSlugRoute
   '/top-lists/$slug': typeof TopListsSlugRoute
+  '/categories/': typeof CategoriesIndexRoute
   '/laptops/': typeof LaptopsIndexRoute
   '/top-lists/': typeof TopListsIndexRoute
 }
@@ -97,8 +115,10 @@ export interface FileRouteTypes {
     | '/about'
     | '/compare'
     | '/contact'
+    | '/categories/$slug'
     | '/laptops/$slug'
     | '/top-lists/$slug'
+    | '/categories/'
     | '/laptops/'
     | '/top-lists/'
   fileRoutesByTo: FileRoutesByTo
@@ -107,8 +127,10 @@ export interface FileRouteTypes {
     | '/about'
     | '/compare'
     | '/contact'
+    | '/categories/$slug'
     | '/laptops/$slug'
     | '/top-lists/$slug'
+    | '/categories'
     | '/laptops'
     | '/top-lists'
   id:
@@ -117,8 +139,10 @@ export interface FileRouteTypes {
     | '/about'
     | '/compare'
     | '/contact'
+    | '/categories/$slug'
     | '/laptops/$slug'
     | '/top-lists/$slug'
+    | '/categories/'
     | '/laptops/'
     | '/top-lists/'
   fileRoutesById: FileRoutesById
@@ -128,8 +152,10 @@ export interface RootRouteChildren {
   AboutRoute: typeof AboutRoute
   CompareRoute: typeof CompareRoute
   ContactRoute: typeof ContactRoute
+  CategoriesSlugRoute: typeof CategoriesSlugRoute
   LaptopsSlugRoute: typeof LaptopsSlugRoute
   TopListsSlugRoute: typeof TopListsSlugRoute
+  CategoriesIndexRoute: typeof CategoriesIndexRoute
   LaptopsIndexRoute: typeof LaptopsIndexRoute
   TopListsIndexRoute: typeof TopListsIndexRoute
 }
@@ -178,6 +204,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof LaptopsIndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/categories/': {
+      id: '/categories/'
+      path: '/categories'
+      fullPath: '/categories/'
+      preLoaderRoute: typeof CategoriesIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/top-lists/$slug': {
       id: '/top-lists/$slug'
       path: '/top-lists/$slug'
@@ -192,6 +225,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof LaptopsSlugRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/categories/$slug': {
+      id: '/categories/$slug'
+      path: '/categories/$slug'
+      fullPath: '/categories/$slug'
+      preLoaderRoute: typeof CategoriesSlugRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
@@ -200,8 +240,10 @@ const rootRouteChildren: RootRouteChildren = {
   AboutRoute: AboutRoute,
   CompareRoute: CompareRoute,
   ContactRoute: ContactRoute,
+  CategoriesSlugRoute: CategoriesSlugRoute,
   LaptopsSlugRoute: LaptopsSlugRoute,
   TopListsSlugRoute: TopListsSlugRoute,
+  CategoriesIndexRoute: CategoriesIndexRoute,
   LaptopsIndexRoute: LaptopsIndexRoute,
   TopListsIndexRoute: TopListsIndexRoute,
 }
