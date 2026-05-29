@@ -81,6 +81,12 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { property: "og:site_name", content: "Laptopia" },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
+      { property: "og:title", content: "Laptopia — Discover your next laptop" },
+      { name: "twitter:title", content: "Laptopia — Discover your next laptop" },
+      { property: "og:description", content: "Editorial reviews, comparisons, and rankings of the best laptops for gaming, creators, students, and professionals." },
+      { name: "twitter:description", content: "Editorial reviews, comparisons, and rankings of the best laptops for gaming, creators, students, and professionals." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/85f6d7fa-aa3f-4ac1-b863-386e7f287932/id-preview-0b77b3ee--e60639c9-d93d-4b36-8cd9-4f3bd1a4cfee.lovable.app-1780029417433.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/85f6d7fa-aa3f-4ac1-b863-386e7f287932/id-preview-0b77b3ee--e60639c9-d93d-4b36-8cd9-4f3bd1a4cfee.lovable.app-1780029417433.png" },
     ],
     links: [
       { rel: "stylesheet", href: appCss },
