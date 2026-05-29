@@ -2,6 +2,7 @@ import { createFileRoute, Link, notFound } from "@tanstack/react-router";
 import { getCategory, getByCategory, categories } from "@/lib/data";
 import { LaptopCard } from "@/components/laptop/LaptopCard";
 import { ArrowLeft } from "lucide-react";
+import type { Laptop } from "@/lib/data/types";
 
 export const Route = createFileRoute("/categories/$slug")({
   loader: ({ params }) => {
@@ -48,7 +49,7 @@ function CategoryPage() {
         </div>
       ) : (
         <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-          {laptops.map((l) => (<LaptopCard key={l.id} laptop={l} />))}
+          {(laptops as Laptop[]).map((l) => (<LaptopCard key={l.id} laptop={l} />))}
         </div>
       )}
 
