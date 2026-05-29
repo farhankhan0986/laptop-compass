@@ -34,7 +34,7 @@ function Index() {
       {/* Hero */}
       <section className="border-b border-border">
         <div className="mx-auto grid max-w-7xl gap-12 px-4 py-16 sm:px-6 sm:py-24 lg:grid-cols-2 lg:items-center">
-          <div>
+          <div className="animate-fade-in-up">
             <p className="mb-4 text-xs font-medium uppercase tracking-wider text-muted-foreground">
               Independent laptop reviews
             </p>
@@ -149,8 +149,8 @@ function Index() {
           {categories.map((c) => (
             <Link
               key={c.slug}
-              to="/laptops"
-              search={{ category: c.slug } as any}
+              to="/categories/$slug"
+              params={{ slug: c.slug }}
               className="group flex flex-col rounded-lg border border-border bg-card p-5 transition-colors hover:border-foreground/30"
             >
               <span className="text-sm font-medium text-foreground">{c.name}</span>
