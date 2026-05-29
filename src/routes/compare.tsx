@@ -26,8 +26,8 @@ function Compare() {
   const navigate = useNavigate({ from: "/compare" });
   const a = all.find((l) => l.slug === aSlug) ?? all[0];
   const b = all.find((l) => l.slug === bSlug) ?? all[1];
-  const setA = (slug: string) => navigate({ search: (p) => ({ ...p, a: slug }) });
-  const setB = (slug: string) => navigate({ search: (p) => ({ ...p, b: slug }) });
+  const setA = (slug: string) => navigate({ search: (p: { a?: string; b?: string }) => ({ ...p, a: slug }) });
+  const setB = (slug: string) => navigate({ search: (p: { a?: string; b?: string }) => ({ ...p, b: slug }) });
 
   const rows: [string, (l: Laptop) => string | number][] = [
     ["Price (INR)", (l) => formatINR(l.priceINR)],
