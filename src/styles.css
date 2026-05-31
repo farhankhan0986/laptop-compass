@@ -168,3 +168,22 @@
     transition-duration: 0.01ms !important;
   }
 }
+
+/* Subtle grid background for hero sections */
+.bg-grid {
+  background-image:
+    linear-gradient(to right, color-mix(in oklab, var(--color-foreground) 6%, transparent) 1px, transparent 1px),
+    linear-gradient(to bottom, color-mix(in oklab, var(--color-foreground) 6%, transparent) 1px, transparent 1px);
+  background-size: 56px 56px;
+}
+
+.bg-grid-fade {
+  -webkit-mask-image: radial-gradient(ellipse 80% 60% at 50% 0%, #000 40%, transparent 100%);
+          mask-image: radial-gradient(ellipse 80% 60% at 50% 0%, #000 40%, transparent 100%);
+}
+
+/* Subtle radial spotlight */
+.spotlight {
+  background:
+    radial-gradient(60% 50% at 50% 0%, color-mix(in oklab, var(--color-foreground) 8%, transparent), transparent 70%);
+}
