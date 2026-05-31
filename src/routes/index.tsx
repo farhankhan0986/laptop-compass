@@ -64,14 +64,17 @@ function Index() {
   return (
     <div>
       {/* Hero */}
-      <section className="border-b border-border">
-        <div className="mx-auto grid max-w-7xl gap-12 px-4 py-16 sm:px-6 sm:py-24 lg:grid-cols-2 lg:items-center">
+      <section className="relative overflow-hidden border-b border-border">
+        <div className="absolute inset-0 bg-grid bg-grid-fade pointer-events-none" aria-hidden />
+        <div className="absolute inset-0 spotlight pointer-events-none" aria-hidden />
+        <div className="relative mx-auto grid max-w-7xl gap-12 px-4 py-16 sm:px-6 sm:py-24 lg:grid-cols-2 lg:items-center">
           <div className="animate-fade-in-up">
-            <p className="mb-4 text-xs font-medium uppercase tracking-wider text-muted-foreground">
-              Independent laptop reviews
-            </p>
+            <span className="mb-5 inline-flex items-center gap-2 rounded-full border border-border bg-card/80 px-3 py-1 text-xs font-medium text-muted-foreground backdrop-blur">
+              <span className="h-1.5 w-1.5 rounded-full bg-foreground" />
+              Independent laptop reviews · Updated weekly
+            </span>
             <h1 className="text-4xl font-semibold tracking-tight text-foreground sm:text-5xl md:text-6xl">
-              Discover the perfect laptop.
+              Discover the perfect <span className="italic text-muted-foreground">laptop</span>.
             </h1>
             <p className="mt-5 max-w-xl text-base text-muted-foreground sm:text-lg">
               For gaming, coding, editing, students, and professionals — handpicked picks, deep specs,
@@ -105,21 +108,36 @@ function Index() {
                 See top lists
               </Link>
             </div>
+
+            {/* Stats strip */}
+            <dl className="mt-10 grid max-w-md grid-cols-3 gap-6 border-t border-border pt-6">
+              {[
+                { k: all.length + "+", v: "Laptops" },
+                { k: categories.length + "", v: "Categories" },
+                { k: "6", v: "Top lists" },
+              ].map((s) => (
+                <div key={s.v}>
+                  <dt className="text-xl font-semibold tracking-tight text-foreground sm:text-2xl">{s.k}</dt>
+                  <dd className="mt-0.5 text-xs uppercase tracking-wider text-muted-foreground">{s.v}</dd>
+                </div>
+              ))}
+            </dl>
           </div>
 
           {/* Hero mockup grid */}
-          <div className="grid grid-cols-2 gap-3">
+          <div className="relative grid grid-cols-2 gap-3">
             {popular.slice(0, 4).map((l, i) => (
               <div
                 key={l.id}
-                className={`overflow-hidden rounded-lg border border-border bg-card ${i % 3 === 0 ? "row-span-2" : ""}`}
+                className={`group overflow-hidden rounded-xl border border-border bg-card shadow-sm transition-transform hover:-translate-y-0.5 ${i % 3 === 0 ? "row-span-2" : ""}`}
+                style={{ animation: `fade-in-up 0.6s ease-out ${i * 80}ms both` }}
               >
-                <div className="aspect-[4/3] overflow-hidden">
-                  <img src={l.images[0]} alt={l.name} loading="lazy" className="h-full w-full object-cover" />
+                <div className="aspect-[4/3] overflow-hidden bg-muted">
+                  <img src={l.images[0]} alt={l.name} loading="lazy" className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" />
                 </div>
                 <div className="p-3">
-                  <p className="text-xs text-muted-foreground">{l.brand}</p>
-                  <p className="truncate text-sm font-medium text-foreground">{l.name}</p>
+                  <p className="text-[11px] uppercase tracking-wider text-muted-foreground">{l.brand}</p>
+                  <p className="mt-0.5 truncate text-sm font-medium text-foreground">{l.name}</p>
                 </div>
               </div>
             ))}
