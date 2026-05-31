@@ -177,36 +177,59 @@ function Index() {
       </section>
 
       {/* Why trust us */}
-      <section className="border-y border-border bg-card/30">
-        <div className="mx-auto grid max-w-7xl gap-8 px-4 py-16 sm:px-6 md:grid-cols-3">
+      <section className="border-y border-border bg-card/40">
+        <div className="mx-auto grid max-w-7xl gap-px overflow-hidden bg-border px-0 sm:grid-cols-3">
           {[
-            { t: "Editorially independent", d: "No paid placements. Rankings reflect real-world performance and value." },
-            { t: "Spec-driven", d: "Every pick is backed by detailed benchmarks across gaming, editing, coding and AI workloads." },
-            { t: "Updated regularly", d: "We refresh our top lists as new hardware ships, so picks stay current." },
+            { Icon: Shield, t: "Editorially independent", d: "No paid placements. Rankings reflect real-world performance and value." },
+            { Icon: LineChart, t: "Spec-driven", d: "Every pick is backed by benchmarks across gaming, editing, coding and AI workloads." },
+            { Icon: RefreshCw, t: "Updated regularly", d: "We refresh our top lists as new hardware ships, so picks stay current." },
           ].map((b) => (
-            <div key={b.t}>
-              <h3 className="text-base font-semibold text-foreground">{b.t}</h3>
-              <p className="mt-2 text-sm text-muted-foreground">{b.d}</p>
+            <div key={b.t} className="bg-background p-8">
+              <b.Icon className="h-5 w-5 text-foreground" strokeWidth={1.5} />
+              <h3 className="mt-4 text-base font-semibold text-foreground">{b.t}</h3>
+              <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{b.d}</p>
             </div>
           ))}
         </div>
       </section>
 
       {/* Categories */}
-      <section className="mx-auto max-w-7xl px-4 py-16 sm:px-6">
-        <SectionHeader eyebrow="Browse" title="By category" />
-        <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-4">
-          {categories.map((c) => (
-            <Link
-              key={c.slug}
-              to="/categories/$slug"
-              params={{ slug: c.slug }}
-              className="group flex flex-col rounded-lg border border-border bg-card p-5 transition-colors hover:border-foreground/30"
-            >
-              <span className="text-sm font-medium text-foreground">{c.name}</span>
-              <span className="mt-1 line-clamp-2 text-xs text-muted-foreground">{c.description}</span>
-            </Link>
-          ))}
+      <section className="mx-auto max-w-7xl px-4 py-20 sm:px-6">
+        <SectionHeader
+          eyebrow="Browse"
+          title="Find your laptop by need"
+          description="Pick the use case that fits you best — every pick is backed by hands-on testing and real benchmarks."
+          href="/categories"
+        />
+        <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-4">
+          {categories.map((c) => {
+            const Icon = categoryIcons[c.slug] ?? Sparkles;
+            const count = getByCategory(c.slug).length;
+            return (
+              <Link
+                key={c.slug}
+                to="/categories/$slug"
+                params={{ slug: c.slug }}
+                className="group relative flex flex-col overflow-hidden rounded-xl border border-border bg-card p-5 transition-all hover:-translate-y-0.5 hover:border-foreground/40 hover:shadow-md"
+              >
+                <div
+                  className="pointer-events-none absolute -right-6 -top-6 h-24 w-24 rounded-full bg-foreground/[0.04] transition-transform duration-500 group-hover:scale-125"
+                  aria-hidden
+                />
+                <div className="relative flex h-10 w-10 items-center justify-center rounded-lg border border-border bg-background text-foreground transition-colors group-hover:bg-foreground group-hover:text-background">
+                  <Icon className="h-5 w-5" strokeWidth={1.5} />
+                </div>
+                <div className="relative mt-4 flex items-baseline justify-between">
+                  <span className="text-sm font-semibold text-foreground">{c.name}</span>
+                  <span className="text-[11px] tabular-nums text-muted-foreground">{count}</span>
+                </div>
+                <p className="relative mt-1 line-clamp-2 text-xs leading-relaxed text-muted-foreground">{c.description}</p>
+                <span className="relative mt-4 inline-flex items-center gap-1 text-[11px] font-medium uppercase tracking-wider text-muted-foreground transition-colors group-hover:text-foreground">
+                  Explore <ArrowRight className="h-3 w-3 transition-transform group-hover:translate-x-0.5" />
+                </span>
+              </Link>
+            );
+          })}
         </div>
       </section>
 
