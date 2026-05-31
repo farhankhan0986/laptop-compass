@@ -125,23 +125,36 @@ function Index() {
           </div>
 
           {/* Hero mockup grid */}
-          <div className="relative grid grid-cols-2 gap-3">
-            {popular.slice(0, 4).map((l, i) => (
-              <div
-                key={l.id}
-                className={`group overflow-hidden rounded-xl border border-border bg-card shadow-sm transition-transform hover:-translate-y-0.5 ${i % 3 === 0 ? "row-span-2" : ""}`}
-                style={{ animation: `fade-in-up 0.6s ease-out ${i * 80}ms both` }}
-              >
-                <div className="aspect-[4/3] overflow-hidden bg-muted">
-                  <img src={l.images[0]} alt={l.name} loading="lazy" className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" />
-                </div>
-                <div className="p-3">
-                  <p className="text-[11px] uppercase tracking-wider text-muted-foreground">{l.brand}</p>
-                  <p className="mt-0.5 truncate text-sm font-medium text-foreground">{l.name}</p>
-                </div>
-              </div>
-            ))}
-          </div>
+          <div className="grid grid-cols-2 gap-3">
+  {popular.slice(0, 4).map((l, i) => (
+    <div
+      key={l.id}
+      className="group overflow-hidden rounded-xl border border-border bg-card shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-md"
+      style={{
+        animation: `fade-in-up 0.6s ease-out ${i * 80}ms both`,
+      }}
+    >
+      <div className="aspect-[4/3] overflow-hidden bg-muted">
+        <img
+          src={l.images[0]}
+          alt={l.name}
+          loading="lazy"
+          className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+        />
+      </div>
+
+      <div className="flex flex-col gap-1 p-3">
+        <p className="text-[11px] uppercase tracking-wider text-muted-foreground truncate">
+          {l.brand}
+        </p>
+
+        <h3 className="line-clamp-2 min-h-[40px] text-sm font-medium text-foreground">
+          {l.name}
+        </h3>
+      </div>
+    </div>
+  ))}
+</div>
         </div>
       </section>
 
