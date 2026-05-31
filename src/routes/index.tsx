@@ -1,10 +1,42 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { Link } from "@tanstack/react-router";
-import { ArrowRight, Search } from "lucide-react";
+import {
+  ArrowRight,
+  Search,
+  Gamepad2,
+  Film,
+  Code2,
+  GraduationCap,
+  Wallet,
+  Sparkles,
+  Crown,
+  Feather,
+  Palette,
+  Briefcase,
+  BrainCircuit,
+  type LucideIcon,
+  Shield,
+  LineChart,
+  RefreshCw,
+} from "lucide-react";
 import { useState } from "react";
 import { categories, getByCategory, getLaptops, filterLaptops } from "@/lib/data";
 import { SectionHeader } from "@/components/shared/SectionHeader";
 import { LaptopRail } from "@/components/shared/LaptopRail";
+
+const categoryIcons: Record<string, LucideIcon> = {
+  gaming: Gamepad2,
+  editing: Film,
+  programming: Code2,
+  students: GraduationCap,
+  budget: Wallet,
+  premium: Sparkles,
+  expensive: Crown,
+  lightweight: Feather,
+  creator: Palette,
+  business: Briefcase,
+  aiml: BrainCircuit,
+};
 
 export const Route = createFileRoute("/")({
   head: () => ({
