@@ -1,6 +1,6 @@
 import { createFileRoute, Link, notFound } from "@tanstack/react-router";
 import { useState } from "react";
-import { Star, Check, X as XIcon, ExternalLink } from "lucide-react";
+import { Star, Check, X as XIcon, ExternalLink, Gamepad2, Video, Code2, BrainCircuit, Swords } from "lucide-react";
 import { getLaptopBySlug, getSimilar, formatINR, formatUSD } from "@/lib/data";
 import type { Laptop } from "@/lib/data/types";
 import { LaptopCard } from "@/components/laptop/LaptopCard";
@@ -151,22 +151,56 @@ function LaptopDetails() {
 
       {/* Performance */}
       <section className="mt-16">
-        <h2 className="text-xl font-semibold tracking-tight text-foreground">Performance</h2>
+        <div className="flex items-end justify-between gap-4">
+          <div>
+            <h2 className="text-xl font-semibold tracking-tight text-foreground">Performance</h2>
+            <p className="mt-1 text-sm text-muted-foreground">
+              Scored across four real-world workloads, normalised to a 100-point scale.
+            </p>
+          </div>
+          <Link
+            to="/laptop-war"
+            className="hidden items-center gap-1.5 rounded-md border border-border bg-card px-3 py-1.5 text-xs font-medium text-foreground transition-colors hover:bg-accent sm:inline-flex"
+          >
+            <Swords className="h-3.5 w-3.5" /> Pit it against another
+          </Link>
+        </div>
         <div className="mt-5 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
           {[
-            { k: "Gaming", v: laptop.performance.gaming },
-            { k: "Editing", v: laptop.performance.editing },
-            { k: "Coding", v: laptop.performance.coding },
-            { k: "AI / ML", v: laptop.performance.aiml },
-          ].map((p) => (
-            <div key={p.k} className="rounded-lg border border-border bg-card p-5">
-              <p className="text-xs text-muted-foreground">{p.k}</p>
-              <p className="mt-1 text-2xl font-semibold text-foreground">{p.v}<span className="text-sm text-muted-foreground">/100</span></p>
-              <div className="mt-3 h-1.5 overflow-hidden rounded-full bg-muted">
-                <div className="h-full bg-foreground" style={{ width: `${p.v}%` }} />
+            { k: "Gaming", v: laptop.performance.gaming, Icon: Gamepad2, hint: "AAA & esports titles" },
+            { k: "Editing", v: laptop.performance.editing, Icon: Video, hint: "4K video & RAW photo" },
+            { k: "Coding", v: laptop.performance.coding, Icon: Code2, hint: "Builds, IDEs & VMs" },
+            { k: "AI / ML", v: laptop.performance.aiml, Icon: BrainCircuit, hint: "Local inference & training" },
+          ].map(({ k, v, Icon, hint }) => {
+            const tier = v >= 85 ? "Excellent" : v >= 70 ? "Great" : v >= 55 ? "Good" : v >= 40 ? "Average" : "Limited";
+            return (
+              <div
+                key={k}
+                className="group relative overflow-hidden rounded-xl border border-border bg-card p-5 transition-all hover:-translate-y-0.5 hover:border-foreground/40 hover:shadow-md"
+              >
+                <div className="flex items-start justify-between">
+                  <div className="flex h-10 w-10 items-center justify-center rounded-lg border border-border bg-background transition-colors group-hover:bg-foreground group-hover:text-background">
+                    <Icon className="h-5 w-5" />
+                  </div>
+                  <span className="rounded-full border border-border bg-background px-2 py-0.5 text-[10px] font-medium uppercase tracking-wider text-muted-foreground">
+                    {tier}
+                  </span>
+                </div>
+                <p className="mt-4 text-xs font-medium uppercase tracking-wider text-muted-foreground">{k}</p>
+                <p className="mt-1 flex items-baseline gap-1 text-foreground">
+                  <span className="text-3xl font-semibold tabular-nums">{v}</span>
+                  <span className="text-sm text-muted-foreground">/100</span>
+                </p>
+                <div className="mt-3 h-1.5 overflow-hidden rounded-full bg-muted">
+                  <div
+                    className="h-full rounded-full bg-foreground transition-[width] duration-500"
+                    style={{ width: `${v}%` }}
+                  />
+                </div>
+                <p className="mt-3 text-xs text-muted-foreground">{hint}</p>
               </div>
-            </div>
-          ))}
+            );
+          })}
         </div>
       </section>
 
