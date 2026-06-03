@@ -71,6 +71,9 @@ function buildRounds(a: Laptop, b: Laptop): Round[] {
   // value = total perf per ₹1000
   const valueA = (perScore(a) / a.priceINR) * 100000;
   const valueB = (perScore(b) / b.priceINR) * 100000;
+  const wKg = (l: Laptop) => parseFloat(l.weight) || 0;
+  const wA = wKg(a);
+  const wB = wKg(b);
 
   return [
     { key: "Gaming", icon: Gamepad2, a: a.performance.gaming, b: b.performance.gaming, aLabel: `${a.performance.gaming}/100`, bLabel: `${b.performance.gaming}/100`, higherWins: true },
@@ -82,7 +85,7 @@ function buildRounds(a: Laptop, b: Laptop): Round[] {
     { key: "Display", icon: Monitor, a: a.displaySize, b: b.displaySize, aLabel: `${a.displaySize}"`, bLabel: `${b.displaySize}"`, higherWins: true },
     { key: "Refresh rate", icon: Zap, a: a.refreshRateHz, b: b.refreshRateHz, aLabel: `${a.refreshRateHz} Hz`, bLabel: `${b.refreshRateHz} Hz`, higherWins: true },
     { key: "Battery", icon: BatteryCharging, a: a.batteryHours, b: b.batteryHours, aLabel: `${a.batteryHours} h`, bLabel: `${b.batteryHours} h`, higherWins: true },
-    { key: "Weight", icon: Scale, a: a.weightKg, b: b.weightKg, aLabel: `${a.weightKg} kg`, bLabel: `${b.weightKg} kg`, higherWins: false },
+    { key: "Weight", icon: Scale, a: wA, b: wB, aLabel: a.weight, bLabel: b.weight, higherWins: false },
     { key: "Rating", icon: Star, a: a.rating, b: b.rating, aLabel: a.rating.toFixed(1), bLabel: b.rating.toFixed(1), higherWins: true },
     { key: "Value", icon: Sparkles, a: valueA, b: valueB, aLabel: `${valueA.toFixed(1)} pts/₹1k`, bLabel: `${valueB.toFixed(1)} pts/₹1k`, higherWins: true },
   ];
