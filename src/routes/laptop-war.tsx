@@ -316,11 +316,11 @@ function FighterCard({
       </select>
 
       {laptop && (
-        <div className="mt-4 grid grid-cols-[96px_1fr] gap-4">
-          <div className={`aspect-[4/3] overflow-hidden rounded-md border border-border bg-background ${accent === "right" ? "order-2" : ""}`}>
+        <div className="mt-4 flex gap-4">
+          <div className="h-24 w-32 shrink-0 overflow-hidden rounded-md border border-border bg-background">
             <img src={laptop.images[0]} alt={laptop.name} className="h-full w-full object-cover" />
           </div>
-          <div className={accent === "right" ? "order-1 text-right" : ""}>
+          <div className="flex min-w-0 flex-col justify-center">
             <p className="text-xs text-muted-foreground">{laptop.brand}</p>
             <p className="mt-0.5 text-sm font-semibold leading-tight text-foreground">{laptop.name}</p>
             <p className="mt-1 inline-flex items-center gap-1 text-xs text-muted-foreground">
