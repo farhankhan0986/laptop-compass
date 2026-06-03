@@ -10,6 +10,7 @@ const nav = [
   { to: "/categories", label: "Categories" },
   { to: "/top-lists", label: "Top Lists" },
   { to: "/compare", label: "Compare" },
+  { to: "/laptop-war", label: "Laptop War" },
   { to: "/about", label: "About" },
 ];
 
