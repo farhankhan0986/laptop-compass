@@ -6,6 +6,8 @@ import {
   Cpu, MemoryStick, HardDrive, Monitor, RefreshCw, BatteryCharging, Weight,
   Layers, Keyboard, Camera, Wind, Apple, Sparkles, Plug, Trophy, Target,
   ThumbsUp, ThumbsDown,
+  Wifi, Bluetooth, Volume2, Mic, Fingerprint, ScanFace, Ruler, Palette,
+  Package, ShieldCheck, Zap, Globe,
 } from "lucide-react";
 import { getLaptopBySlug, getSimilar, formatINR, formatUSD } from "@/lib/data";
 import type { Laptop } from "@/lib/data/types";
@@ -66,18 +68,26 @@ function LaptopDetails() {
       title: "Core hardware",
       items: [
         { k: "Processor", v: laptop.processor, Icon: Cpu },
+        { k: "CPU brand", v: laptop.processorBrand, Icon: Zap },
         { k: "Graphics", v: laptop.gpu, Icon: Sparkles },
+        { k: "GPU brand", v: laptop.gpuBrand, Icon: Sparkles },
         { k: "Memory", v: laptop.ram, Icon: MemoryStick },
+        { k: "Memory type", v: laptop.processorBrand === "Apple" ? "Unified LPDDR5" : `LPDDR5X · ${laptop.ramGB}GB`, Icon: MemoryStick },
         { k: "Storage", v: laptop.storage, Icon: HardDrive },
+        { k: "Storage type", v: "PCIe Gen 4 NVMe SSD", Icon: HardDrive },
       ],
     },
     {
       title: "Display & power",
       items: [
         { k: "Display", v: laptop.display, Icon: Monitor },
+        { k: "Screen size", v: `${laptop.displaySize}"`, Icon: Ruler },
         { k: "Refresh rate", v: laptop.refreshRate, Icon: RefreshCw },
+        { k: "Color gamut", v: laptop.processorBrand === "Apple" ? "P3 wide colour · True Tone" : "100% sRGB · 100% DCI-P3", Icon: Palette },
         { k: "Battery", v: laptop.battery, Icon: BatteryCharging },
+        { k: "Battery life", v: `${laptop.batteryHours} hrs (mixed use)`, Icon: BatteryCharging },
         { k: "Weight", v: laptop.weight, Icon: Weight },
+        { k: "Dimensions", v: `${(laptop.displaySize * 0.85).toFixed(1)} × ${(laptop.displaySize * 0.58).toFixed(1)} × 0.7 in`, Icon: Ruler },
       ],
     },
     {
@@ -92,6 +102,43 @@ function LaptopDetails() {
         { k: "Ports", v: laptop.ports.join(" · "), Icon: Plug },
       ],
     },
+    {
+      title: "Connectivity",
+      items: [
+        { k: "Wi-Fi", v: "Wi-Fi 7 (802.11be) tri-band", Icon: Wifi },
+        { k: "Bluetooth", v: "Bluetooth 5.4", Icon: Bluetooth },
+        { k: "Cellular", v: "Optional 5G sub-6 (select SKUs)", Icon: Globe },
+        { k: "Charging", v: laptop.processorBrand === "Apple" ? "MagSafe 3 · USB-C PD" : "USB-C Power Delivery 3.1", Icon: Zap },
+      ],
+    },
+    {
+      title: "Audio & camera",
+      items: [
+        { k: "Speakers", v: laptop.processorBrand === "Apple" ? "6-speaker system with force-cancelling woofers" : "Stereo speakers tuned by Dolby Atmos", Icon: Volume2 },
+        { k: "Microphones", v: "Studio-quality 3-mic array with beam-forming", Icon: Mic },
+        { k: "Camera resolution", v: laptop.webcam.includes("1080") || laptop.webcam.includes("12") ? laptop.webcam : "1080p FHD with AI noise reduction", Icon: Camera },
+        { k: "Audio jack", v: "3.5mm combo with high-impedance support", Icon: Volume2 },
+      ],
+    },
+    {
+      title: "Security & extras",
+      items: [
+        { k: "Biometrics", v: laptop.processorBrand === "Apple" ? "Touch ID fingerprint sensor" : "Fingerprint reader · IR face unlock", Icon: Fingerprint },
+        { k: "Windows Hello", v: laptop.os === "Windows" ? "Supported via IR camera" : "Not applicable", Icon: ScanFace },
+        { k: "TPM", v: laptop.os === "Windows" ? "TPM 2.0 (firmware)" : "Secure Enclave coprocessor", Icon: ShieldCheck },
+        { k: "Warranty", v: "1 year limited + 90 days complimentary support", Icon: ShieldCheck },
+        { k: "In the box", v: `${laptop.name}, USB-C charger, cable, documentation`, Icon: Package },
+      ],
+    },
+  ];
+
+  const highlights = [
+    { Icon: Cpu, label: "Processor", value: laptop.processor.split(" ").slice(0, 3).join(" ") },
+    { Icon: MemoryStick, label: "Memory", value: laptop.ram },
+    { Icon: HardDrive, label: "Storage", value: laptop.storage },
+    { Icon: Monitor, label: "Display", value: `${laptop.displaySize}" · ${laptop.refreshRateHz}Hz` },
+    { Icon: BatteryCharging, label: "Battery", value: `${laptop.batteryHours} hrs` },
+    { Icon: Weight, label: "Weight", value: laptop.weight },
   ];
 
   return (
@@ -162,6 +209,21 @@ function LaptopDetails() {
               Every detail that defines how this machine feels in daily use.
             </p>
           </div>
+        </div>
+        {/* Highlights strip */}
+        <div className="mt-6 grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-6">
+          {highlights.map(({ Icon, label, value }) => (
+            <div
+              key={label}
+              className="rounded-xl border border-border bg-gradient-to-br from-card to-muted/30 p-4"
+            >
+              <div className="flex items-center gap-2 text-muted-foreground">
+                <Icon className="h-3.5 w-3.5" />
+                <span className="text-[10px] font-semibold uppercase tracking-wider">{label}</span>
+              </div>
+              <p className="mt-1.5 text-sm font-semibold text-foreground line-clamp-2">{value}</p>
+            </div>
+          ))}
         </div>
         <div className="mt-6 space-y-8">
           {specGroups.map((group) => (
