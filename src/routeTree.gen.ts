@@ -9,6 +9,7 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
+import { Route as PrivacyRouteImport } from './routes/privacy'
 import { Route as LaptopWarRouteImport } from './routes/laptop-war'
 import { Route as ContactRouteImport } from './routes/contact'
 import { Route as CompareRouteImport } from './routes/compare'
@@ -21,6 +22,11 @@ import { Route as TopListsSlugRouteImport } from './routes/top-lists.$slug'
 import { Route as LaptopsSlugRouteImport } from './routes/laptops.$slug'
 import { Route as CategoriesSlugRouteImport } from './routes/categories.$slug'
 
+const PrivacyRoute = PrivacyRouteImport.update({
+  id: '/privacy',
+  path: '/privacy',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const LaptopWarRoute = LaptopWarRouteImport.update({
   id: '/laptop-war',
   path: '/laptop-war',
@@ -83,6 +89,7 @@ export interface FileRoutesByFullPath {
   '/compare': typeof CompareRoute
   '/contact': typeof ContactRoute
   '/laptop-war': typeof LaptopWarRoute
+  '/privacy': typeof PrivacyRoute
   '/categories/$slug': typeof CategoriesSlugRoute
   '/laptops/$slug': typeof LaptopsSlugRoute
   '/top-lists/$slug': typeof TopListsSlugRoute
@@ -96,6 +103,7 @@ export interface FileRoutesByTo {
   '/compare': typeof CompareRoute
   '/contact': typeof ContactRoute
   '/laptop-war': typeof LaptopWarRoute
+  '/privacy': typeof PrivacyRoute
   '/categories/$slug': typeof CategoriesSlugRoute
   '/laptops/$slug': typeof LaptopsSlugRoute
   '/top-lists/$slug': typeof TopListsSlugRoute
@@ -110,6 +118,7 @@ export interface FileRoutesById {
   '/compare': typeof CompareRoute
   '/contact': typeof ContactRoute
   '/laptop-war': typeof LaptopWarRoute
+  '/privacy': typeof PrivacyRoute
   '/categories/$slug': typeof CategoriesSlugRoute
   '/laptops/$slug': typeof LaptopsSlugRoute
   '/top-lists/$slug': typeof TopListsSlugRoute
@@ -125,6 +134,7 @@ export interface FileRouteTypes {
     | '/compare'
     | '/contact'
     | '/laptop-war'
+    | '/privacy'
     | '/categories/$slug'
     | '/laptops/$slug'
     | '/top-lists/$slug'
@@ -138,6 +148,7 @@ export interface FileRouteTypes {
     | '/compare'
     | '/contact'
     | '/laptop-war'
+    | '/privacy'
     | '/categories/$slug'
     | '/laptops/$slug'
     | '/top-lists/$slug'
@@ -151,6 +162,7 @@ export interface FileRouteTypes {
     | '/compare'
     | '/contact'
     | '/laptop-war'
+    | '/privacy'
     | '/categories/$slug'
     | '/laptops/$slug'
     | '/top-lists/$slug'
@@ -165,6 +177,7 @@ export interface RootRouteChildren {
   CompareRoute: typeof CompareRoute
   ContactRoute: typeof ContactRoute
   LaptopWarRoute: typeof LaptopWarRoute
+  PrivacyRoute: typeof PrivacyRoute
   CategoriesSlugRoute: typeof CategoriesSlugRoute
   LaptopsSlugRoute: typeof LaptopsSlugRoute
   TopListsSlugRoute: typeof TopListsSlugRoute
@@ -175,6 +188,13 @@ export interface RootRouteChildren {
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
+    '/privacy': {
+      id: '/privacy'
+      path: '/privacy'
+      fullPath: '/privacy'
+      preLoaderRoute: typeof PrivacyRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/laptop-war': {
       id: '/laptop-war'
       path: '/laptop-war'
@@ -261,6 +281,7 @@ const rootRouteChildren: RootRouteChildren = {
   CompareRoute: CompareRoute,
   ContactRoute: ContactRoute,
   LaptopWarRoute: LaptopWarRoute,
+  PrivacyRoute: PrivacyRoute,
   CategoriesSlugRoute: CategoriesSlugRoute,
   LaptopsSlugRoute: LaptopsSlugRoute,
   TopListsSlugRoute: TopListsSlugRoute,
@@ -271,3 +292,13 @@ const rootRouteChildren: RootRouteChildren = {
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
   ._addFileTypes<FileRouteTypes>()
+
+import type { getRouter } from './router.tsx'
+import type { startInstance } from './start.ts'
+declare module '@tanstack/react-start' {
+  interface Register {
+    ssr: true
+    router: Awaited<ReturnType<typeof getRouter>>
+    config: Awaited<ReturnType<typeof startInstance.getOptions>>
+  }
+}
