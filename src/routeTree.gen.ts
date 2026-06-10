@@ -9,7 +9,10 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
+import { Route as TermsRouteImport } from './routes/terms'
+import { Route as PrivacyRouteImport } from './routes/privacy'
 import { Route as LaptopWarRouteImport } from './routes/laptop-war'
+import { Route as FaqRouteImport } from './routes/faq'
 import { Route as ContactRouteImport } from './routes/contact'
 import { Route as CompareRouteImport } from './routes/compare'
 import { Route as AboutRouteImport } from './routes/about'
@@ -21,9 +24,24 @@ import { Route as TopListsSlugRouteImport } from './routes/top-lists.$slug'
 import { Route as LaptopsSlugRouteImport } from './routes/laptops.$slug'
 import { Route as CategoriesSlugRouteImport } from './routes/categories.$slug'
 
+const TermsRoute = TermsRouteImport.update({
+  id: '/terms',
+  path: '/terms',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PrivacyRoute = PrivacyRouteImport.update({
+  id: '/privacy',
+  path: '/privacy',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const LaptopWarRoute = LaptopWarRouteImport.update({
   id: '/laptop-war',
   path: '/laptop-war',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const FaqRoute = FaqRouteImport.update({
+  id: '/faq',
+  path: '/faq',
   getParentRoute: () => rootRouteImport,
 } as any)
 const ContactRoute = ContactRouteImport.update({
@@ -82,7 +100,10 @@ export interface FileRoutesByFullPath {
   '/about': typeof AboutRoute
   '/compare': typeof CompareRoute
   '/contact': typeof ContactRoute
+  '/faq': typeof FaqRoute
   '/laptop-war': typeof LaptopWarRoute
+  '/privacy': typeof PrivacyRoute
+  '/terms': typeof TermsRoute
   '/categories/$slug': typeof CategoriesSlugRoute
   '/laptops/$slug': typeof LaptopsSlugRoute
   '/top-lists/$slug': typeof TopListsSlugRoute
@@ -95,7 +116,10 @@ export interface FileRoutesByTo {
   '/about': typeof AboutRoute
   '/compare': typeof CompareRoute
   '/contact': typeof ContactRoute
+  '/faq': typeof FaqRoute
   '/laptop-war': typeof LaptopWarRoute
+  '/privacy': typeof PrivacyRoute
+  '/terms': typeof TermsRoute
   '/categories/$slug': typeof CategoriesSlugRoute
   '/laptops/$slug': typeof LaptopsSlugRoute
   '/top-lists/$slug': typeof TopListsSlugRoute
@@ -109,7 +133,10 @@ export interface FileRoutesById {
   '/about': typeof AboutRoute
   '/compare': typeof CompareRoute
   '/contact': typeof ContactRoute
+  '/faq': typeof FaqRoute
   '/laptop-war': typeof LaptopWarRoute
+  '/privacy': typeof PrivacyRoute
+  '/terms': typeof TermsRoute
   '/categories/$slug': typeof CategoriesSlugRoute
   '/laptops/$slug': typeof LaptopsSlugRoute
   '/top-lists/$slug': typeof TopListsSlugRoute
@@ -124,7 +151,10 @@ export interface FileRouteTypes {
     | '/about'
     | '/compare'
     | '/contact'
+    | '/faq'
     | '/laptop-war'
+    | '/privacy'
+    | '/terms'
     | '/categories/$slug'
     | '/laptops/$slug'
     | '/top-lists/$slug'
@@ -137,7 +167,10 @@ export interface FileRouteTypes {
     | '/about'
     | '/compare'
     | '/contact'
+    | '/faq'
     | '/laptop-war'
+    | '/privacy'
+    | '/terms'
     | '/categories/$slug'
     | '/laptops/$slug'
     | '/top-lists/$slug'
@@ -150,7 +183,10 @@ export interface FileRouteTypes {
     | '/about'
     | '/compare'
     | '/contact'
+    | '/faq'
     | '/laptop-war'
+    | '/privacy'
+    | '/terms'
     | '/categories/$slug'
     | '/laptops/$slug'
     | '/top-lists/$slug'
@@ -164,7 +200,10 @@ export interface RootRouteChildren {
   AboutRoute: typeof AboutRoute
   CompareRoute: typeof CompareRoute
   ContactRoute: typeof ContactRoute
+  FaqRoute: typeof FaqRoute
   LaptopWarRoute: typeof LaptopWarRoute
+  PrivacyRoute: typeof PrivacyRoute
+  TermsRoute: typeof TermsRoute
   CategoriesSlugRoute: typeof CategoriesSlugRoute
   LaptopsSlugRoute: typeof LaptopsSlugRoute
   TopListsSlugRoute: typeof TopListsSlugRoute
@@ -175,11 +214,32 @@ export interface RootRouteChildren {
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
+    '/terms': {
+      id: '/terms'
+      path: '/terms'
+      fullPath: '/terms'
+      preLoaderRoute: typeof TermsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/privacy': {
+      id: '/privacy'
+      path: '/privacy'
+      fullPath: '/privacy'
+      preLoaderRoute: typeof PrivacyRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/laptop-war': {
       id: '/laptop-war'
       path: '/laptop-war'
       fullPath: '/laptop-war'
       preLoaderRoute: typeof LaptopWarRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/faq': {
+      id: '/faq'
+      path: '/faq'
+      fullPath: '/faq'
+      preLoaderRoute: typeof FaqRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/contact': {
@@ -260,7 +320,10 @@ const rootRouteChildren: RootRouteChildren = {
   AboutRoute: AboutRoute,
   CompareRoute: CompareRoute,
   ContactRoute: ContactRoute,
+  FaqRoute: FaqRoute,
   LaptopWarRoute: LaptopWarRoute,
+  PrivacyRoute: PrivacyRoute,
+  TermsRoute: TermsRoute,
   CategoriesSlugRoute: CategoriesSlugRoute,
   LaptopsSlugRoute: LaptopsSlugRoute,
   TopListsSlugRoute: TopListsSlugRoute,
