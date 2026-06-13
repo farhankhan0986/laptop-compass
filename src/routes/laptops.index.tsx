@@ -5,6 +5,9 @@ import { LaptopCard } from "@/components/laptop/LaptopCard";
 import { Filter, X } from "lucide-react";
 
 export const Route = createFileRoute("/laptops/")({
+  validateSearch: (s: Record<string, unknown>) => ({
+    q: typeof s.q === "string" ? s.q : undefined,
+  }),
   head: () => ({
     meta: [
       { title: "All Laptops — Laptopia" },
@@ -22,6 +25,7 @@ const PROC_BRANDS = ["Intel", "AMD", "Apple", "Qualcomm"];
 const GPU_BRANDS = ["NVIDIA", "AMD", "Intel", "Apple"];
 
 function LaptopsListing() {
+  const { q } = Route.useSearch();
   const [open, setOpen] = useState(false);
   const [selBrands, setSelBrands] = useState<string[]>([]);
   const [selOS, setSelOS] = useState<string[]>([]);
@@ -31,7 +35,7 @@ function LaptopsListing() {
   const [minRAM, setMinRAM] = useState(0);
   const [minPriceINR, setMinPriceINR] = useState(0);
   const [maxPriceINR, setMaxPriceINR] = useState(500000);
-  const [search, setSearch] = useState("");
+  const [search, setSearch] = useState(q ?? "");
   const [sort, setSort] = useState<SortKey>("popular");
 
   const results = useMemo(

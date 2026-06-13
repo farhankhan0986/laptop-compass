@@ -84,7 +84,9 @@ function Index() {
             <form
               onSubmit={(e) => {
                 e.preventDefault();
-                if (query) window.location.href = `/laptops?q=${encodeURIComponent(query)}`;
+                window.location.href = query
+                  ? `/laptops?q=${encodeURIComponent(query)}`
+                  : `/laptops`;
               }}
               className="mt-8 flex h-12 max-w-md items-center gap-2 rounded-md border border-border bg-card px-3"
             >
