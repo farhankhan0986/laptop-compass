@@ -1,5 +1,5 @@
 import { Link } from "@tanstack/react-router";
-import { Menu, Search, X } from "lucide-react";
+import { Laptop, Menu, Search, X } from "lucide-react";
 import { useEffect, useState } from "react";
 import { ThemeToggle } from "@/components/theme/ThemeToggle";
 import { SearchCommand } from "@/components/search/SearchCommand";
@@ -33,9 +33,12 @@ export function Header() {
     <header className="sticky top-0 z-40 w-full border-b border-border bg-background/80 backdrop-blur">
       <div className="mx-auto flex h-14 max-w-7xl items-center justify-between px-4 sm:px-6">
         <div className="flex items-center gap-8">
-          <Link to="/" className="flex items-center gap-2 text-base font-semibold tracking-tight">
-            <span className="inline-block h-5 w-5 rounded-sm bg-foreground" />
-            <span>Laptopia</span>
+          <Link to="/" className="group flex items-center gap-2 text-base font-semibold tracking-tight">
+            <span className="relative inline-flex h-7 w-7 items-center justify-center rounded-lg bg-gradient-to-br from-foreground to-foreground/70 text-background shadow-sm ring-1 ring-border transition-transform group-hover:scale-105">
+              <Laptop className="h-4 w-4" strokeWidth={2.25} />
+              <span className="absolute -bottom-0.5 -right-0.5 h-1.5 w-1.5 rounded-full bg-emerald-500 ring-2 ring-background" />
+            </span>
+            <span className="bg-gradient-to-r from-foreground to-foreground/70 bg-clip-text text-transparent">Laptopia</span>
           </Link>
           <nav className="hidden items-center gap-6 md:flex">
             {nav.map((n) => (
